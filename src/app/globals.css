@@ -513,6 +513,15 @@ select {
   gap: 16px;
 }
 
+.gallery-section-head {
+  margin-top: 64px;
+}
+
+.interior-gallery-grid .gallery-card:nth-child(3),
+.interior-gallery-grid .gallery-card:nth-child(8) {
+  grid-column: span 2;
+}
+
 .gallery-card {
   position: relative;
   min-height: 260px;
@@ -757,7 +766,9 @@ select {
   }
 
   .gallery-card:nth-child(1),
-  .gallery-card:nth-child(6) {
+  .gallery-card:nth-child(6),
+  .interior-gallery-grid .gallery-card:nth-child(3),
+  .interior-gallery-grid .gallery-card:nth-child(8) {
     grid-column: span 1;
   }
 

@@ -1,5 +1,5 @@
 import { PublicPage } from "@/components/public-page";
-import { marinaGallery } from "@/lib/gallery-assets";
+import { interiorGallery, marinaGallery } from "@/lib/gallery-assets";
 import { publicAsset } from "@/lib/site-assets";
 
 export default function GalleryPage() {
@@ -12,6 +12,24 @@ export default function GalleryPage() {
       <section className="page-section">
         <div className="gallery-grid">
           {marinaGallery.map((item) => (
+            <article className="gallery-card" key={item.src}>
+              <img src={publicAsset(item.src as `/${string}`)} alt={item.title} />
+              <div className="gallery-caption">
+                <span>{item.category}</span>
+                <h3>{item.title}</h3>
+              </div>
+            </article>
+          ))}
+        </div>
+        <div className="section-head gallery-section-head">
+          <div>
+            <span className="eyebrow">Interier The Botel</span>
+            <h2>Restaurace, bar a lounge</h2>
+          </div>
+          <p>Aktualni sada fotek interieru botelu pro budouci vyber, upravy a vymeny.</p>
+        </div>
+        <div className="gallery-grid interior-gallery-grid">
+          {interiorGallery.map((item) => (
             <article className="gallery-card" key={item.src}>
               <img src={publicAsset(item.src as `/${string}`)} alt={item.title} />
               <div className="gallery-caption">
