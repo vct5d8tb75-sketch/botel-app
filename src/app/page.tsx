@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import { ArrowRight, CalendarCheck, ShipWheel, Sparkles } from "lucide-react";
 import { PublicHeader } from "@/components/public-header";
 import { RoomCard } from "@/components/room-card";
@@ -14,10 +15,14 @@ const departmentLogos = [
 ];
 
 export default function HomePage() {
+  const heroStyle = {
+    "--hero-image": `url("${publicAsset("/botel-river-close.jpg")}")`,
+  } as CSSProperties;
+
   return (
     <main className="site-shell">
       <PublicHeader />
-      <section className="hero">
+      <section className="hero" style={heroStyle}>
         <div className="hero-inner">
           <div className="hero-logo-panel">
             <img className="hero-logo" src={publicAsset("/botel-logo.jpg")} alt="The Botel" />
@@ -38,6 +43,24 @@ export default function HomePage() {
               <ArrowRight size={18} aria-hidden="true" />
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="section photo-section">
+        <div className="section-inner photo-story">
+          <div className="photo-copy">
+            <span className="eyebrow">Na vode v Praze</span>
+            <h2>Botel s vlastnim rytmem reky</h2>
+            <p>
+              Realny pohled na kotviste, terasu a lod tvori zaklad vizualu pro prezentacni web,
+              fotogalerii i budouci kampane.
+            </p>
+          </div>
+          <img
+            className="wide-photo"
+            src={publicAsset("/botel-river-wide.jpg")}
+            alt="Botel na rece s panoramatem Prahy"
+          />
         </div>
       </section>
 
