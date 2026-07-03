@@ -208,7 +208,7 @@ select {
 
 .section-head {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: space-between;
   gap: 24px;
   margin-bottom: 32px;
@@ -231,6 +231,76 @@ select {
 
 .dark .section-head p {
   color: rgba(255, 255, 255, 0.68);
+}
+
+.brand-section {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(244, 247, 250, 0.96)),
+    radial-gradient(circle at top right, rgba(201, 164, 92, 0.14), transparent 34%);
+}
+
+.department-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.department-logo-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 168px;
+  border: 1px solid rgba(7, 24, 47, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 252, 244, 0.88);
+  box-shadow: 0 16px 46px rgba(7, 24, 47, 0.08);
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.department-logo-card:hover {
+  border-color: rgba(201, 164, 92, 0.55);
+  box-shadow: 0 22px 56px rgba(7, 24, 47, 0.12);
+  transform: translateY(-2px);
+}
+
+.department-logo {
+  display: grid;
+  justify-items: center;
+  color: var(--navy);
+  font-family: var(--font-serif), Georgia, serif;
+  line-height: 0.88;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.department-logo .the {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.department-logo .name {
+  margin-top: 2px;
+  font-size: clamp(34px, 4.2vw, 46px);
+  font-weight: 800;
+}
+
+.department-logo .sub {
+  margin-top: 10px;
+  font-family: var(--font-sans), Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.wave-mark {
+  width: 92px;
+  height: 18px;
+  margin-top: 13px;
+  background:
+    radial-gradient(18px 10px at 10px 8px, transparent 11px, var(--navy) 12px, var(--navy) 15px, transparent 16px) 0 0 / 34px 18px repeat-x;
 }
 
 .card-grid {
@@ -465,6 +535,7 @@ select {
   }
 
   .card-grid,
+  .department-logo-grid,
   .metric-grid,
   .admin-grid {
     grid-template-columns: 1fr 1fr;
@@ -517,6 +588,7 @@ select {
   }
 
   .card-grid,
+  .department-logo-grid,
   .metric-grid,
   .admin-grid {
     grid-template-columns: 1fr;

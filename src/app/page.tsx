@@ -5,6 +5,14 @@ import { RoomCard } from "@/components/room-card";
 import { rooms } from "@/lib/mock-data";
 import { publicAsset } from "@/lib/site-assets";
 
+const departmentLogos = [
+  { name: "River", label: "Bar", href: "/restaurace", hasWaves: true },
+  { name: "Deck", label: "Restaurant", href: "/restaurace" },
+  { name: "Horizon", label: "Up Deck Bar", href: "/terasa" },
+  { name: "Float", label: "Eventy", href: "/eventy" },
+  { name: "Aft", label: "By The Botel", href: "/eventy", hasWaves: true },
+];
+
 export default function HomePage() {
   return (
     <main className="site-shell">
@@ -53,6 +61,32 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="section brand-section">
+        <div className="section-inner">
+          <div className="section-head">
+            <div>
+              <span className="eyebrow">Zony botelu</span>
+              <h2>Logo system pro provozni casti</h2>
+            </div>
+            <p>
+              Zaklad vizualni identity pro bar, restauraci, horni palubu, eventy a zadni cast botelu.
+            </p>
+          </div>
+          <div className="department-logo-grid">
+            {departmentLogos.map((item) => (
+              <Link className="department-logo-card" href={item.href} key={item.name}>
+                <span className="department-logo" aria-label={`The ${item.name} ${item.label}`}>
+                  <span className="the">The</span>
+                  <span className="name">{item.name}</span>
+                  <span className="sub">{item.label}</span>
+                  {item.hasWaves ? <span className="wave-mark" aria-hidden="true" /> : null}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="section dark">
         <div className="section-inner">
           <div className="section-head">
@@ -61,7 +95,7 @@ export default function HomePage() {
               <h2>Jeden prehled pro cely botel</h2>
             </div>
             <p>
-              Admin cast je navrzena pro rezervace, housekeeping, udrzbu, trby, naklady, personal a
+              Admin cast je navrzena pro rezervace, housekeeping, udrzbu, trzby, naklady, personal a
               budouci integrace na hotelove a pokladni systemy.
             </p>
           </div>
