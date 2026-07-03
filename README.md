@@ -76,6 +76,21 @@ Projekt je nastaveny tak, aby se dal upravovat bez lokalniho PC:
 
 Stav nasazeni je videt v zalozce `Actions`.
 
+## GitHub Codespaces
+
+Pro plnohodnotny vyvoj primo v GitHub cloudu je pripraveny `.devcontainer`.
+
+Postup:
+
+1. Otevri repozitar: `https://github.com/vct5d8tb75-sketch/botel-app`
+2. Klikni na `Code`.
+3. Otevri zalozku `Codespaces`.
+4. Vyber `Create codespace on main`.
+5. Codespace automaticky nainstaluje zavislosti.
+6. Spust `npm run dev`.
+
+Nahled webu se otevre na portu `3000`. Upravy, commity a push pak probiha primo v GitHub cloudu, bez zavislosti na lokalnim Windows 11 PC.
+
 ## Prace pres Codex na iPhonu
 
 Repozitar na GitHubu je hlavni zdroj pravdy. To znamena, ze dalsi upravy mohou jit primo pres Codex/GitHub i ve chvili, kdy lokalni PC neni zapnute.
