@@ -60,10 +60,12 @@ select {
 }
 
 .topbar-inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
   justify-content: space-between;
-  max-width: 1180px;
+  width: 100%;
+  max-width: none;
   min-height: 56px;
   margin: 0 auto;
   padding: 0 18px;
@@ -91,10 +93,18 @@ select {
 .nav-links {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 14px;
+  min-width: 0;
+  overflow-x: auto;
   color: rgba(255, 255, 255, 0.82);
   font-size: 13px;
   white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.nav-links::-webkit-scrollbar {
+  display: none;
 }
 
 .nav-links a:hover {
@@ -836,11 +846,6 @@ select {
     gap: 12px;
     padding-bottom: 0;
     font-size: 12px;
-    scrollbar-width: none;
-  }
-
-  .nav-links::-webkit-scrollbar {
-    display: none;
   }
 
   .topbar .button {
@@ -892,7 +897,8 @@ select {
   }
 
   .topbar .button {
-    display: none;
+    display: inline-flex;
+    min-width: 38px;
   }
 
   .hero-inner {
