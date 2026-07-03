@@ -1,9 +1,20 @@
+import type { CSSProperties } from "react";
 import type { Room } from "@/lib/models";
+import { publicAsset } from "@/lib/site-assets";
+
+const roomImages = ["/botel-river-close.jpg", "/botel-river-wide.jpg", "/botel-river-close.jpg"] as const;
 
 export function RoomCard({ room }: { room: Room }) {
+  const imageIndex = Number(room.id.replace(/\D/g, "")) % roomImages.length;
+
   return (
     <article className="room-card">
-      <div className="room-image" role="img" aria-label={room.category} />
+      <div
+        className="room-image"
+        role="img"
+        aria-label={room.category}
+        style={{ "--room-image": `url("${publicAsset(roomImages[imageIndex])}")` } as CSSProperties}
+      />
       <div className="room-body">
         <h3>{room.name}</h3>
         <p className="room-meta">

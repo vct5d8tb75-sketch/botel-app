@@ -19,7 +19,7 @@ export const rooms: Room[] = [
     priceFromCzk: 3900,
     status: "available",
     features: ["Vyhled na reku", "King bed", "Pracovni kout", "Premium kosmetika"],
-    image: "/images/cabin-river.jpg"
+    image: "/botel-river-close.jpg"
   },
   {
     id: "room-204",
@@ -31,7 +31,7 @@ export const rooms: Room[] = [
     priceFromCzk: 6200,
     status: "occupied",
     features: ["Soukromy balkon", "Oddelena obyvaci cast", "Minibar", "Vyhled na Prahu"],
-    image: "/images/suite-marina.jpg"
+    image: "/botel-river-wide.jpg"
   },
   {
     id: "room-112",
@@ -43,7 +43,7 @@ export const rooms: Room[] = [
     priceFromCzk: 2900,
     status: "maintenance",
     features: ["Queen bed", "Ticha zona", "Rychla Wi-Fi", "Kompaktni koupelna"],
-    image: "/images/cabin-anchor.jpg"
+    image: "/botel-river-close.jpg"
   }
 ];
 
