@@ -176,13 +176,7 @@ select {
   align-items: center;
   justify-content: center;
   width: min(310px, 78vw);
-  min-height: 118px;
   margin-bottom: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 8px;
-  background: linear-gradient(135deg, rgba(12, 63, 99, 0.34), rgba(47, 132, 173, 0.14));
-  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(10px);
 }
 
 .hero-logo {
