@@ -5,7 +5,7 @@ export default function TerracePage() {
     <PublicPage
       eyebrow="Horni paluba"
       title="Terasa pro zapady slunce, drinky a privatni eventy"
-      description="Horní paluba je hlavni zazitek botelu a prirozene misto pro bar, brunch i vecerni pronajmy."
+      description="Horni paluba je hlavni zazitek The Botel a prirozene misto pro bar, brunch i vecerni pronajmy."
     >
       <section className="page-section">
         <div className="card-grid">

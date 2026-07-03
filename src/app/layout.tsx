@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Botel App",
-  description: "Moderni webova aplikace pro prezentaci a rizeni botelu."
+  title: "The Botel",
+  description: "Moderni webova aplikace pro prezentaci a rizeni The Botel."
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

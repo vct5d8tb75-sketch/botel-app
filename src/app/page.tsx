@@ -27,8 +27,8 @@ export default function HomePage() {
           <div className="hero-logo-panel">
             <img className="hero-logo" src={publicAsset("/botel-logo.jpg")} alt="The Botel" />
           </div>
-          <span className="eyebrow">Boutique botel na vode v Praze</span>
-          <h1>Botel Praha</h1>
+          <span className="eyebrow">Boutique hotel na vode</span>
+          <h1>The Botel</h1>
           <p>
             Premium pobyt na rece, horni paluba pro vecery nad mestem a provozni system pripraveny pro
             obsazenost, rezervace, restauraci, bar i reporting majiteli.
@@ -50,7 +50,7 @@ export default function HomePage() {
         <div className="section-inner photo-story">
           <div className="photo-copy">
             <span className="eyebrow">Na vode v Praze</span>
-            <h2>Botel s vlastnim rytmem reky</h2>
+            <h2>The Botel na rytmu reky</h2>
             <p>
               Realny pohled na kotviste, terasu a lod tvori zaklad vizualu pro prezentacni web,
               fotogalerii i budouci kampane.
@@ -59,7 +59,7 @@ export default function HomePage() {
           <img
             className="wide-photo"
             src={publicAsset("/marina-gallery/09.jpg")}
-            alt="Event na botelu Marina"
+            alt="Event na The Botel"
           />
         </div>
       </section>
@@ -88,11 +88,11 @@ export default function HomePage() {
         <div className="section-inner">
           <div className="section-head">
             <div>
-              <span className="eyebrow">Zony botelu</span>
+              <span className="eyebrow">Zony The Botel</span>
               <h2>Logo system pro provozni casti</h2>
             </div>
             <p>
-              Zaklad vizualni identity pro bar, restauraci, horni palubu, eventy a zadni cast botelu.
+              Zaklad vizualni identity pro bar, restauraci, horni palubu, eventy a zadni cast The Botel.
             </p>
           </div>
           <div className="department-logo-grid">
@@ -115,7 +115,7 @@ export default function HomePage() {
           <div className="section-head">
             <div>
               <span className="eyebrow">Provoz a majitel</span>
-              <h2>Jeden prehled pro cely botel</h2>
+              <h2>Jeden prehled pro The Botel</h2>
             </div>
             <p>
               Admin cast je navrzena pro rezervace, housekeeping, udrzbu, trzby, naklady, personal a

@@ -32,7 +32,7 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
           <span className="brand-mark">
             <Anchor size={20} aria-hidden="true" />
           </span>
-          Botel App
+          The Botel
         </Link>
         <nav className="admin-nav" aria-label="Administrace">
           {nav.map(({ href, label, icon: Icon }) => (

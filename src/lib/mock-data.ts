@@ -23,7 +23,7 @@ export const rooms: Room[] = [
   },
   {
     id: "room-204",
-    name: "Suite Marina",
+    name: "Suite Horizon",
     category: "Signature Suite",
     deck: "Horni paluba",
     capacity: 3,

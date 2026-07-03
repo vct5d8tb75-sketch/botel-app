@@ -18,7 +18,7 @@ export default function ContactPage() {
           <article className="feature-card">
             <Mail size={24} aria-hidden="true" />
             <h3>E-mail</h3>
-            <p className="muted">rezervace@botel-app.cz</p>
+            <p className="muted">rezervace@thebotel.cz</p>
           </article>
           <article className="feature-card">
             <MapPin size={24} aria-hidden="true" />

@@ -1,8 +1,8 @@
-# Botel App
+# The Botel
 
-Moderni webova aplikace pro verejnou prezentaci a managerske rizeni botelu.
+Moderni webova aplikace pro verejnou prezentaci a managerske rizeni The Botel.
 
-Projekt je samostatny a oddeleny od jinych repozitaru. Prvni verze obsahuje verejny web, interni admin dashboard, datove modely, mock data a pripravene integracni stuby pro budouci napojeni.
+Projekt je samostatny a oddeleny od jinych repozitaru. Prvni verze obsahuje verejny web The Botel, interni admin dashboard, datove modely, mock data a pripravene integracni stuby pro budouci napojeni.
 
 ## Stack
 
@@ -152,7 +152,7 @@ Poznamka: GitHub Pages je staticky hosting, proto realna API vrstva bude pozdeji
 
 ## Dalsi kroky
 
-1. Doplneni realnych fotografii botelu a brandingu.
+1. Doplneni realnych fotografii a brandingu The Botel.
 2. Napojeni rezervacniho formulare nebo rezervacniho widgetu.
 3. Autentizace a role pro interni cast.
 4. Realna integrace Previo a Dotykacka.
