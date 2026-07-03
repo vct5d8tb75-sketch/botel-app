@@ -64,6 +64,18 @@ Verejna GitHub Pages adresa:
 https://vct5d8tb75-sketch.github.io/botel-app/
 ```
 
+## Upravy primo na GitHubu
+
+Projekt je nastaveny tak, aby se dal upravovat bez lokalniho PC:
+
+1. Otevri repozitar: `https://github.com/vct5d8tb75-sketch/botel-app`
+2. Vyber soubor, ktery chces upravit.
+3. Klikni na ikonu tuzky `Edit this file`.
+4. Uloz zmenu pres `Commit changes` primo do vetve `main`.
+5. GitHub Actions automaticky spusti build a nasadi web na GitHub Pages.
+
+Stav nasazeni je videt v zalozce `Actions`.
+
 Lokalni vyvoj:
 
 ```bash
