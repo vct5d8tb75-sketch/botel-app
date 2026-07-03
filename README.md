@@ -76,6 +76,24 @@ Projekt je nastaveny tak, aby se dal upravovat bez lokalniho PC:
 
 Stav nasazeni je videt v zalozce `Actions`.
 
+## Prace pres Codex na iPhonu
+
+Repozitar na GitHubu je hlavni zdroj pravdy. To znamena, ze dalsi upravy mohou jit primo pres Codex/GitHub i ve chvili, kdy lokalni PC neni zapnute.
+
+Pri dalsi praci staci v Codexu zadat:
+
+```txt
+Uprav repozitar https://github.com/vct5d8tb75-sketch/botel-app
+```
+
+Po zmene ma Codex pracovat primo v GitHub repozitari, vytvorit commit do `main`, pockat na GitHub Actions a overit zivy web:
+
+```txt
+https://vct5d8tb75-sketch.github.io/botel-app/
+```
+
+Projektove instrukce pro Codex jsou ulozene v `AGENTS.md`.
+
 Lokalni vyvoj:
 
 ```bash
