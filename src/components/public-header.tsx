@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Anchor, CalendarCheck } from "lucide-react";
+import { CalendarCheck } from "lucide-react";
+import { publicAsset } from "@/lib/site-assets";
 
 const links = [
   { href: "/pokoje", label: "Pokoje" },
@@ -15,10 +16,7 @@ export function PublicHeader() {
     <header className="topbar">
       <div className="topbar-inner">
         <Link className="brand" href="/">
-          <span className="brand-mark">
-            <Anchor size={20} aria-hidden="true" />
-          </span>
-          Botel Praha
+          <img className="brand-logo" src={publicAsset("/botel-logo.jpg")} alt="The Botel" />
         </Link>
         <nav className="nav-links" aria-label="Hlavni navigace">
           {links.map((link) => (

@@ -3,6 +3,7 @@ import { ArrowRight, CalendarCheck, ShipWheel, Sparkles } from "lucide-react";
 import { PublicHeader } from "@/components/public-header";
 import { RoomCard } from "@/components/room-card";
 import { rooms } from "@/lib/mock-data";
+import { publicAsset } from "@/lib/site-assets";
 
 export default function HomePage() {
   return (
@@ -10,6 +11,9 @@ export default function HomePage() {
       <PublicHeader />
       <section className="hero">
         <div className="hero-inner">
+          <div className="hero-logo-panel">
+            <img className="hero-logo" src={publicAsset("/botel-logo.jpg")} alt="The Botel" />
+          </div>
           <span className="eyebrow">Boutique botel na vode v Praze</span>
           <h1>Botel Praha</h1>
           <p>
