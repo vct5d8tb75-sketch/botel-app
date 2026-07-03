@@ -11,7 +11,7 @@ interface PublicPageProps {
 
 export function PublicPage({ title, eyebrow, description, children }: PublicPageProps) {
   const heroStyle = {
-    "--page-hero-image": `url("${publicAsset("/botel-river-wide.jpg")}")`,
+    "--page-hero-image": `url("${publicAsset("/marina-gallery/12.jpg")}")`,
   } as CSSProperties;
 
   return (

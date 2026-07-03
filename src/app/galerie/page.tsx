@@ -1,4 +1,6 @@
 import { PublicPage } from "@/components/public-page";
+import { marinaGallery } from "@/lib/gallery-assets";
+import { publicAsset } from "@/lib/site-assets";
 
 export default function GalleryPage() {
   return (
@@ -8,11 +10,14 @@ export default function GalleryPage() {
       description="Galerie je pripravena pro realne fotografie kajut, restaurace, baru, terasy a eventu."
     >
       <section className="page-section">
-        <div className="card-grid">
-          {["Kajuty", "Restaurace", "Horni paluba", "Eventy", "Vyhledy", "Detail interieru"].map((item) => (
-            <article className="feature-card" key={item}>
-              <h3>{item}</h3>
-              <p className="muted">Misto pro napojeni na realne fotografie nebo CMS.</p>
+        <div className="gallery-grid">
+          {marinaGallery.map((item) => (
+            <article className="gallery-card" key={item.src}>
+              <img src={publicAsset(item.src as `/${string}`)} alt={item.title} />
+              <div className="gallery-caption">
+                <span>{item.category}</span>
+                <h3>{item.title}</h3>
+              </div>
             </article>
           ))}
         </div>

@@ -16,7 +16,7 @@ const departmentLogos = [
 
 export default function HomePage() {
   const heroStyle = {
-    "--hero-image": `url("${publicAsset("/botel-river-close.jpg")}")`,
+    "--hero-image": `url("${publicAsset("/marina-gallery/11.jpg")}")`,
   } as CSSProperties;
 
   return (
@@ -58,8 +58,8 @@ export default function HomePage() {
           </div>
           <img
             className="wide-photo"
-            src={publicAsset("/botel-river-wide.jpg")}
-            alt="Botel na rece s panoramatem Prahy"
+            src={publicAsset("/marina-gallery/09.jpg")}
+            alt="Event na botelu Marina"
           />
         </div>
       </section>

@@ -13,12 +13,11 @@ This repository is the source of truth for The Botel web application.
 
 ## Image Policy
 
-- Use only images provided by the user and committed into `public/`.
+- Use only images provided by the user or taken from the user's Botel Marina website and committed into `public/`.
 - Do not add stock photos, Unsplash images, remote placeholders, or unrelated brand assets.
 - Current approved assets:
   - `public/botel-logo.jpg`
-  - `public/botel-river-close.jpg`
-  - `public/botel-river-wide.jpg`
+  - `public/marina-gallery/*.jpg`
 
 ## Technical Notes
 
