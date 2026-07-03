@@ -177,7 +177,7 @@ select {
   justify-content: center;
   width: min(310px, 78vw);
   min-height: 118px;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 8px;
   background: linear-gradient(135deg, rgba(12, 63, 99, 0.34), rgba(47, 132, 173, 0.14));
@@ -213,7 +213,7 @@ select {
 .hero p,
 .page-hero p {
   max-width: 620px;
-  margin: 0 0 28px;
+  margin: 14px 0 28px;
   color: rgba(255, 255, 255, 0.86);
   font-size: 18px;
   line-height: 1.7;

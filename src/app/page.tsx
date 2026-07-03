@@ -35,7 +35,6 @@ export default function HomePage() {
             <img className="hero-logo" src={publicAsset("/botel-logo-negative.png")} alt="The Botel" />
           </div>
           <span className="eyebrow">Boutique hotel na vode</span>
-          <h1>The Botel</h1>
           <p>
             Premium pobyt na rece, horni paluba pro vecery nad mestem a provozni system pripraveny pro
             obsazenost, rezervace, restauraci, bar i reporting majiteli.
