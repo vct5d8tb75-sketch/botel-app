@@ -1,3 +1,4 @@
+// Temporary labels for reviewing and replacing photos before launch.
 const photoIndex = new Map<string, number>([
   ["/marina-gallery/02.jpg", 1],
   ["/marina-gallery/01.jpg", 2],
