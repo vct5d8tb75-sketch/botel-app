@@ -4,6 +4,7 @@ import { ArrowRight, CalendarCheck, ShipWheel, Sparkles } from "lucide-react";
 import { PublicHeader } from "@/components/public-header";
 import { RoomCard } from "@/components/room-card";
 import { crewMembers } from "@/lib/crew-assets";
+import { formatPhotoNumber } from "@/lib/photo-index";
 import { rooms } from "@/lib/mock-data";
 import { publicAsset } from "@/lib/site-assets";
 
@@ -17,14 +18,18 @@ const departmentLogos = [
 ];
 
 export default function HomePage() {
+  const heroImage = "/marina-gallery/11.jpg";
+  const storyImage = "/marina-gallery/09.jpg";
+  const crewImage = crewMembers[0].src as `/${string}`;
   const heroStyle = {
-    "--hero-image": `url("${publicAsset("/marina-gallery/11.jpg")}")`,
+    "--hero-image": `url("${publicAsset(heroImage)}")`,
   } as CSSProperties;
 
   return (
     <main className="site-shell">
       <PublicHeader />
       <section className="hero" style={heroStyle}>
+        <span className="photo-number" aria-hidden="true">{formatPhotoNumber(heroImage)}</span>
         <div className="hero-inner">
           <div className="hero-logo-panel">
             <img className="hero-logo" src={publicAsset("/botel-logo-negative.png")} alt="The Botel" />
@@ -58,11 +63,14 @@ export default function HomePage() {
               fotogalerii i budouci kampane.
             </p>
           </div>
-          <img
-            className="wide-photo"
-            src={publicAsset("/marina-gallery/09.jpg")}
-            alt="Event na The Botel"
-          />
+          <div className="photo-frame">
+            <img
+              className="wide-photo"
+              src={publicAsset(storyImage)}
+              alt="Event na The Botel"
+            />
+            <span className="photo-number" aria-hidden="true">{formatPhotoNumber(storyImage)}</span>
+          </div>
         </div>
       </section>
 
@@ -71,9 +79,10 @@ export default function HomePage() {
           <div className="crew-portrait-wrap">
             <img
               className="crew-portrait"
-              src={publicAsset(crewMembers[0].src as `/${string}`)}
+              src={publicAsset(crewImage)}
               alt={crewMembers[0].name}
             />
+            <span className="photo-number" aria-hidden="true">{formatPhotoNumber(crewImage)}</span>
           </div>
           <div className="crew-copy">
             <span className="eyebrow">Posadka The Botel</span>

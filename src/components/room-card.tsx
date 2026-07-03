@@ -1,8 +1,11 @@
 import type { CSSProperties } from "react";
 import type { Room } from "@/lib/models";
+import { formatPhotoNumber } from "@/lib/photo-index";
 import { publicAsset } from "@/lib/site-assets";
 
 export function RoomCard({ room }: { room: Room }) {
+  const photoNumber = formatPhotoNumber(room.image);
+
   return (
     <article className="room-card">
       <div
@@ -10,7 +13,9 @@ export function RoomCard({ room }: { room: Room }) {
         role="img"
         aria-label={room.category}
         style={{ "--room-image": `url("${publicAsset(room.image as `/${string}`)}")` } as CSSProperties}
-      />
+      >
+        {photoNumber ? <span className="photo-number" aria-hidden="true">{photoNumber}</span> : null}
+      </div>
       <div className="room-body">
         <h3>{room.name}</h3>
         <p className="room-meta">

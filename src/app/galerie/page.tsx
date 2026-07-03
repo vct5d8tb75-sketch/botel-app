@@ -1,5 +1,6 @@
 import { PublicPage } from "@/components/public-page";
 import { interiorGallery, marinaGallery } from "@/lib/gallery-assets";
+import { formatPhotoNumber } from "@/lib/photo-index";
 import { publicAsset } from "@/lib/site-assets";
 
 export default function GalleryPage() {
@@ -14,6 +15,7 @@ export default function GalleryPage() {
           {marinaGallery.map((item) => (
             <article className="gallery-card" key={item.src}>
               <img src={publicAsset(item.src as `/${string}`)} alt={item.title} />
+              <span className="photo-number" aria-hidden="true">{formatPhotoNumber(item.src)}</span>
               <div className="gallery-caption">
                 <span>{item.category}</span>
                 <h3>{item.title}</h3>
@@ -32,6 +34,7 @@ export default function GalleryPage() {
           {interiorGallery.map((item) => (
             <article className="gallery-card" key={item.src}>
               <img src={publicAsset(item.src as `/${string}`)} alt={item.title} />
+              <span className="photo-number" aria-hidden="true">{formatPhotoNumber(item.src)}</span>
               <div className="gallery-caption">
                 <span>{item.category}</span>
                 <h3>{item.title}</h3>
