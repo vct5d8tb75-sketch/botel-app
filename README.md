@@ -58,6 +58,14 @@ src/
 
 ## Spusteni
 
+Verejna GitHub Pages adresa:
+
+```txt
+https://vct5d8tb75-sketch.github.io/botel-app/
+```
+
+Lokalni vyvoj:
+
 ```bash
 npm install
 npm run dev
@@ -109,6 +117,8 @@ API mock endpoint:
 ```txt
 /api/mock
 ```
+
+Poznamka: GitHub Pages je staticky hosting, proto realna API vrstva bude pozdeji bezet samostatne nebo v hostingu s podporou serverless funkci.
 
 ## Dalsi kroky
 
