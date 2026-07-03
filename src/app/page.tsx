@@ -8,11 +8,12 @@ import { rooms } from "@/lib/mock-data";
 import { publicAsset } from "@/lib/site-assets";
 
 const departmentLogos = [
-  { name: "River", label: "Bar", href: "/restaurace", hasWaves: true },
-  { name: "Deck", label: "Restaurant", href: "/restaurace" },
-  { name: "Horizon", label: "Up Deck Bar", href: "/terasa" },
-  { name: "Float", label: "Eventy", href: "/eventy" },
-  { name: "Aft", label: "By The Botel", href: "/eventy", hasWaves: true },
+  { name: "River", label: "Snidane & restaurace", href: "/restaurace", hasWaves: true },
+  { name: "AFT", label: "Bar na zadni palube", href: "/restaurace", hasWaves: true },
+  { name: "Samon", label: "Hlavni spolecenska mistnost", href: "/eventy" },
+  { name: "Sun Deck", label: "Slunecni terasa", href: "/terasa" },
+  { name: "Horizon", label: "Up deck bar", href: "/terasa" },
+  { name: "Deck", label: "Hlavni bar", href: "/restaurace" },
 ];
 
 export default function HomePage() {
@@ -115,10 +116,10 @@ export default function HomePage() {
           <div className="section-head">
             <div>
               <span className="eyebrow">Zony The Botel</span>
-              <h2>Logo system pro provozni casti</h2>
+              <h2>Prostory a bary The Botel</h2>
             </div>
             <p>
-              Zaklad vizualni identity pro bar, restauraci, horni palubu, eventy a zadni cast The Botel.
+              Jasne pojmenovani pro snidane, bary, spolecenskou mistnost, slunecni terasu a horni palubu.
             </p>
           </div>
           <div className="department-logo-grid">
