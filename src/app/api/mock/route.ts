@@ -9,6 +9,8 @@ import {
   rooms
 } from "@/lib/mock-data";
 
+export const dynamic = "force-static";
+
 export function GET() {
   return NextResponse.json({
     rooms,
