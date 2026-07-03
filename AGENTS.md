@@ -17,8 +17,11 @@ This repository is the source of truth for The Botel web application.
 - Do not add stock photos, Unsplash images, remote placeholders, or unrelated brand assets.
 - Current approved assets:
   - `public/botel-logo.jpg`
+  - `public/botel-logo-negative.png`
   - `public/marina-gallery/*.jpg`
   - `public/crew/*.jpg`
+
+Use `botel-logo-negative.png` on blue/dark backgrounds. Keep `botel-logo.jpg` only for white or very light logo placements.
 
 ## Technical Notes
 

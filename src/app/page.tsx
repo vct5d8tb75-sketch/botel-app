@@ -26,7 +26,7 @@ export default function HomePage() {
       <section className="hero" style={heroStyle}>
         <div className="hero-inner">
           <div className="hero-logo-panel">
-            <img className="hero-logo" src={publicAsset("/botel-logo.jpg")} alt="The Botel" />
+            <img className="hero-logo" src={publicAsset("/botel-logo-negative.png")} alt="The Botel" />
           </div>
           <span className="eyebrow">Boutique hotel na vode</span>
           <h1>The Botel</h1>

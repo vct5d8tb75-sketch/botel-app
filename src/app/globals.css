@@ -1,19 +1,21 @@
 :root {
   --font-sans: "Inter", "Segoe UI", Arial, sans-serif;
   --font-serif: "Cormorant Garamond", Georgia, serif;
-  --navy: #07182f;
-  --navy-soft: #102949;
+  --navy: #0c3f63;
+  --navy-soft: #1f6288;
+  --blue-light: #2f84ad;
+  --blue-mist: #e8f3f8;
   --gold: #c9a45c;
   --gold-soft: #ead8ad;
   --white: #ffffff;
-  --mist: #f4f7fa;
-  --line: #dbe2ea;
+  --mist: #eef7fb;
+  --line: #d7e8f0;
   --ink: #132238;
   --muted: #637083;
   --success: #197b59;
   --warning: #a76f00;
   --danger: #9e2a2b;
-  --shadow: 0 20px 60px rgba(7, 24, 47, 0.14);
+  --shadow: 0 20px 60px rgba(12, 63, 99, 0.14);
 }
 
 * {
@@ -52,7 +54,7 @@ select {
   top: 0;
   z-index: 20;
   border-bottom: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(7, 24, 47, 0.94);
+  background: rgba(12, 63, 99, 0.9);
   color: var(--white);
   backdrop-filter: blur(18px);
 }
@@ -80,12 +82,10 @@ select {
 
 .brand-logo {
   display: block;
-  width: 122px;
-  height: 50px;
+  width: 132px;
+  height: 54px;
   object-fit: contain;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.92);
-  padding: 6px 10px;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.22));
 }
 
 .nav-links {
@@ -127,7 +127,7 @@ select {
   align-items: end;
   overflow: hidden;
   background:
-    linear-gradient(90deg, rgba(7, 24, 47, 0.9), rgba(7, 24, 47, 0.44), rgba(7, 24, 47, 0.1)),
+    linear-gradient(90deg, rgba(12, 63, 99, 0.86), rgba(31, 98, 136, 0.46), rgba(47, 132, 173, 0.12)),
     var(--hero-image);
   background-position: center;
   background-size: cover;
@@ -144,19 +144,21 @@ select {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: min(340px, 88vw);
-  min-height: 170px;
+  width: min(310px, 78vw);
+  min-height: 118px;
   margin-bottom: 28px;
-  border: 1px solid rgba(201, 164, 92, 0.34);
+  border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 8px;
-  background: rgba(255, 252, 244, 0.9);
-  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.24);
+  background: linear-gradient(135deg, rgba(12, 63, 99, 0.34), rgba(47, 132, 173, 0.14));
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(10px);
 }
 
 .hero-logo {
   display: block;
-  width: min(250px, 70vw);
+  width: min(250px, 68vw);
   height: auto;
+  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.24));
 }
 
 .eyebrow {
@@ -197,7 +199,7 @@ select {
 }
 
 .section.dark {
-  background: var(--navy);
+  background: linear-gradient(135deg, var(--navy), var(--navy-soft));
   color: var(--white);
 }
 
@@ -235,7 +237,7 @@ select {
 
 .photo-section {
   padding-bottom: 40px;
-  background: var(--white);
+  background: var(--blue-mist);
 }
 
 .photo-story {
@@ -269,7 +271,7 @@ select {
 }
 
 .crew-section {
-  background: linear-gradient(180deg, var(--white), #eef2f6);
+  background: linear-gradient(180deg, var(--white), var(--blue-mist));
 }
 
 .crew-story {
@@ -341,8 +343,8 @@ select {
 
 .brand-section {
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(244, 247, 250, 0.96)),
-    radial-gradient(circle at top right, rgba(201, 164, 92, 0.14), transparent 34%);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(232, 243, 248, 0.96)),
+    radial-gradient(circle at top right, rgba(47, 132, 173, 0.18), transparent 34%);
 }
 
 .department-logo-grid {

@@ -16,7 +16,7 @@ export function PublicHeader() {
     <header className="topbar">
       <div className="topbar-inner">
         <Link className="brand" href="/">
-          <img className="brand-logo" src={publicAsset("/botel-logo.jpg")} alt="The Botel" />
+          <img className="brand-logo" src={publicAsset("/botel-logo-negative.png")} alt="The Botel" />
         </Link>
         <nav className="nav-links" aria-label="Hlavni navigace">
           {links.map((link) => (
