@@ -11,7 +11,7 @@ import { publicAsset } from "@/lib/site-assets";
 const departmentLogos = [
   { name: "River", label: "Snidane & restaurace", href: "/restaurace", hasWaves: true },
   { name: "AFT", label: "Bar na zadni palube", href: "/restaurace", hasWaves: true },
-  { name: "Samon", label: "Hlavni spolecenska mistnost", href: "/eventy" },
+  { name: "Salon", label: "Hlavni spolecenska mistnost", href: "/eventy" },
   { name: "Sun Deck", label: "Slunecni terasa", href: "/terasa" },
   { name: "Horizon", label: "Up deck bar", href: "/terasa" },
   { name: "Deck", label: "Hlavni bar", href: "/restaurace" },

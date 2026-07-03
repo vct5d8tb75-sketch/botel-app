@@ -2,7 +2,7 @@ import { PublicPage } from "@/components/public-page";
 
 const eventSpaces = [
   {
-    name: "The Samon",
+    name: "The Salon",
     text: "Hlavni spolecenska mistnost v prvnim patre pro konference, oslavy, prezentace a vecerni program.",
   },
   {
