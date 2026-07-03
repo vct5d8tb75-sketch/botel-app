@@ -18,6 +18,7 @@ This repository is the source of truth for The Botel web application.
 - Current approved assets:
   - `public/botel-logo.jpg`
   - `public/marina-gallery/*.jpg`
+  - `public/crew/*.jpg`
 
 ## Technical Notes
 

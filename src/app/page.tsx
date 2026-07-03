@@ -3,6 +3,7 @@ import type { CSSProperties } from "react";
 import { ArrowRight, CalendarCheck, ShipWheel, Sparkles } from "lucide-react";
 import { PublicHeader } from "@/components/public-header";
 import { RoomCard } from "@/components/room-card";
+import { crewMembers } from "@/lib/crew-assets";
 import { rooms } from "@/lib/mock-data";
 import { publicAsset } from "@/lib/site-assets";
 
@@ -61,6 +62,31 @@ export default function HomePage() {
             src={publicAsset("/marina-gallery/09.jpg")}
             alt="Event na The Botel"
           />
+        </div>
+      </section>
+
+      <section className="section crew-section">
+        <div className="section-inner crew-story">
+          <div className="crew-portrait-wrap">
+            <img
+              className="crew-portrait"
+              src={publicAsset(crewMembers[0].src as `/${string}`)}
+              alt={crewMembers[0].name}
+            />
+          </div>
+          <div className="crew-copy">
+            <span className="eyebrow">Posadka The Botel</span>
+            <h2>Osobni hostitel na palube</h2>
+            <p>
+              The Botel ma pusobit osobne, kultivovane a provozne spolehlive. Fotky posadky budou
+              drzet jednotny vizual pro recepci, eventy, restauraci i interni system.
+            </p>
+            <div className="crew-card">
+              <strong>{crewMembers[0].name}</strong>
+              <span>{crewMembers[0].role}</span>
+              <p>{crewMembers[0].note}</p>
+            </div>
+          </div>
         </div>
       </section>
 
