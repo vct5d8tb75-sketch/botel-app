@@ -8,6 +8,7 @@ const links = [
   { href: "/terasa", label: "Terasa" },
   { href: "/eventy", label: "Eventy" },
   { href: "/svatby", label: "Svatby" },
+  { href: "/nadacni-fond", label: "Fond" },
   { href: "/galerie", label: "Galerie" },
   { href: "/kontakt", label: "Kontakt" }
 ];

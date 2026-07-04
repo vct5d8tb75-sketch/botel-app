@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { CSSProperties } from "react";
-import { CalendarCheck } from "lucide-react";
+import { CalendarCheck, HeartHandshake } from "lucide-react";
 import { PublicHeader } from "@/components/public-header";
 import { RoomCard } from "@/components/room-card";
 import { crewMembers } from "@/lib/crew-assets";
@@ -111,6 +111,27 @@ export default function HomePage() {
             {rooms.map((room) => (
               <RoomCard key={room.id} room={room} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section dark">
+        <div className="section-inner">
+          <div className="event-cta">
+            <div>
+              <span className="eyebrow">Nadacni fond The Botel</span>
+              <h2>Ubytovani pro pacienty Protonoveho centra</h2>
+              <p>
+                Pripravujeme podporene ubytovani pro pacienty a jejich doprovod behem lecby v Praze.
+                Stranka slouzi jako zaklad pro poptavky, pravidla podpory a budouci formular.
+              </p>
+            </div>
+            <div className="cta-actions">
+              <Link className="button" href="/nadacni-fond">
+                <HeartHandshake size={18} aria-hidden="true" />
+                Otevrit fond
+              </Link>
+            </div>
           </div>
         </div>
       </section>
