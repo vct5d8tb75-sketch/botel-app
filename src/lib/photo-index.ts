@@ -17,7 +17,7 @@ const photoIndex = new Map<string, number>([
   ["/marina-gallery/interior/interior-07.jpg", 15],
   ["/marina-gallery/interior/interior-08.jpg", 16],
   ["/crew/captain.jpg", 17],
-  ["/homepage-hero-river.jpg", 18],
+  ["/homepage-hero-river.jpg?v=2", 18],
   ["/homepage-deck-event.jpg", 19],
 ]);
 

@@ -18,8 +18,8 @@ const departmentLogos = [
 ];
 
 export default function HomePage() {
-  const heroImage = "/homepage-hero-river.jpg";
-  const storyImage = "/marina-gallery/09.jpg";
+  const heroImage = "/homepage-hero-river.jpg?v=2";
+  const storyImage = "/homepage-deck-event.jpg";
   const crewImage = crewMembers[0].src as `/${string}`;
   const heroStyle = {
     "--hero-image": `url("${publicAsset(heroImage)}")`,
