@@ -65,6 +65,21 @@ export default function AdminHomePage() {
           ))}
         </article>
       </section>
+
+      <section className="admin-grid">
+        <article className="admin-card">
+          <h3>Recepce a obsazenost</h3>
+          <p className="muted">Rychly denni pohled na prijezdy, odjezdy, stav pokoju a zdroje rezervaci.</p>
+        </article>
+        <article className="admin-card">
+          <h3>Housekeeping a udrzba</h3>
+          <p className="muted">Ukoly pro uklid, inspekce kajut a servisni tikety pro paluby i techniku.</p>
+        </article>
+        <article className="admin-card">
+          <h3>Trzby a reporty</h3>
+          <p className="muted">Zaklad pro provozni cisla z ubytovani, baru, restaurace a eventu.</p>
+        </article>
+      </section>
     </AdminPage>
   );
 }

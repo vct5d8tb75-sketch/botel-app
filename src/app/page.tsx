@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { CSSProperties } from "react";
-import { CalendarCheck, ShipWheel, Sparkles } from "lucide-react";
+import { CalendarCheck } from "lucide-react";
 import { PublicHeader } from "@/components/public-header";
 import { RoomCard } from "@/components/room-card";
 import { crewMembers } from "@/lib/crew-assets";
@@ -141,37 +141,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section dark">
-        <div className="section-inner">
-          <div className="section-head">
-            <div>
-              <span className="eyebrow">Provoz a majitel</span>
-              <h2>Jeden prehled pro The Botel</h2>
-            </div>
-            <p>
-              Admin cast je navrzena pro rezervace, housekeeping, udrzbu, trzby, naklady, personal a
-              budouci integrace na hotelove a pokladni systemy.
-            </p>
-          </div>
-          <div className="card-grid">
-            <article className="feature-card">
-              <ShipWheel size={28} aria-hidden="true" />
-              <h3>Recepce a obsazenost</h3>
-              <p className="muted">Rychly denni pohled na prijezdy, odjezdy, stav pokoju a zdroje rezervaci.</p>
-            </article>
-            <article className="feature-card">
-              <Sparkles size={28} aria-hidden="true" />
-              <h3>Housekeeping a udrzba</h3>
-              <p className="muted">Ukoly pro uklid, inspekce kajut a servisni tikety pro paluby i techniku.</p>
-            </article>
-            <article className="feature-card">
-              <CalendarCheck size={28} aria-hidden="true" />
-              <h3>Trzby a reporty</h3>
-              <p className="muted">Zaklad pro provozni cisla z ubytovani, baru, restaurace a eventu.</p>
-            </article>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
