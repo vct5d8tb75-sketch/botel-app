@@ -1,21 +1,21 @@
 :root {
   --font-sans: "Inter", "Segoe UI", Arial, sans-serif;
   --font-serif: "Cormorant Garamond", Georgia, serif;
-  --navy: #075376;
-  --navy-soft: #0b7198;
-  --blue-light: #1599c7;
-  --blue-mist: #0a6288;
+  --navy: #061b2d;
+  --navy-soft: #0a2d47;
+  --blue-light: #123f5d;
+  --blue-mist: #08243a;
   --gold: #d8b45f;
   --gold-soft: #f4df9f;
-  --white: #0a6b92;
-  --mist: #064866;
+  --white: #0b2b43;
+  --mist: #041524;
   --line: rgba(244, 223, 159, 0.3);
   --ink: #f4df9f;
   --muted: #e2c779;
   --success: #f4df9f;
   --warning: #f4df9f;
   --danger: #e5a38f;
-  --shadow: 0 22px 70px rgba(2, 38, 58, 0.32);
+  --shadow: 0 22px 70px rgba(0, 8, 16, 0.42);
 }
 
 * {
@@ -54,7 +54,7 @@ select {
   top: 0;
   z-index: 20;
   border-bottom: 1px solid rgba(244, 223, 159, 0.22);
-  background: rgba(7, 83, 118, 0.94);
+  background: rgba(4, 21, 36, 0.96);
   color: var(--gold-soft);
   backdrop-filter: blur(18px);
 }
@@ -122,14 +122,14 @@ select {
   padding: 0 13px;
   border: 1px solid rgba(244, 223, 159, 0.72);
   border-radius: 8px;
-  background: rgba(6, 72, 102, 0.86);
+  background: rgba(6, 27, 45, 0.9);
   color: var(--gold-soft);
   font-weight: 700;
 }
 
 .button.secondary {
   border-color: rgba(244, 223, 159, 0.38);
-  background: rgba(7, 83, 118, 0.56);
+  background: rgba(10, 45, 71, 0.64);
   color: var(--gold-soft);
 }
 
@@ -140,7 +140,7 @@ select {
   align-items: end;
   overflow: hidden;
   background:
-    linear-gradient(90deg, rgba(6, 72, 102, 0.88), rgba(10, 98, 136, 0.62), rgba(21, 153, 199, 0.18)),
+    linear-gradient(90deg, rgba(4, 21, 36, 0.9), rgba(8, 36, 58, 0.72), rgba(18, 63, 93, 0.2)),
     var(--hero-image);
   background-position: center;
   background-size: cover;
@@ -158,7 +158,7 @@ select {
   padding: 0 10px;
   border: 1px solid rgba(244, 223, 159, 0.72);
   border-radius: 8px;
-  background: rgba(6, 72, 102, 0.9);
+  background: rgba(4, 21, 36, 0.92);
   color: var(--gold-soft);
   box-shadow: 0 10px 30px rgba(7, 24, 47, 0.24);
   font-size: 12px;
@@ -355,7 +355,7 @@ select {
   padding: 22px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(6, 72, 102, 0.84);
+  background: rgba(6, 27, 45, 0.88);
 }
 
 .crew-card strong {
@@ -378,7 +378,7 @@ select {
 
 .brand-section {
   background:
-    linear-gradient(180deg, rgba(10, 98, 136, 0.94), rgba(6, 72, 102, 0.98)),
+    linear-gradient(180deg, rgba(10, 45, 71, 0.95), rgba(4, 21, 36, 0.98)),
     radial-gradient(circle at top right, rgba(244, 223, 159, 0.12), transparent 34%);
 }
 
@@ -395,7 +395,7 @@ select {
   min-height: 178px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(7, 83, 118, 0.8);
+  background: rgba(6, 27, 45, 0.86);
   box-shadow: var(--shadow);
   transition:
     border-color 160ms ease,
@@ -507,7 +507,7 @@ select {
   padding: 28px;
   border: 1px solid rgba(201, 164, 92, 0.34);
   border-radius: 8px;
-  background: linear-gradient(135deg, rgba(10, 98, 136, 0.92), rgba(6, 72, 102, 0.88));
+  background: linear-gradient(135deg, rgba(10, 45, 71, 0.94), rgba(4, 21, 36, 0.9));
   box-shadow: var(--shadow);
 }
 
@@ -534,7 +534,7 @@ select {
 
 .button.secondary.light {
   border-color: rgba(244, 223, 159, 0.42);
-  background: rgba(7, 83, 118, 0.56);
+  background: rgba(10, 45, 71, 0.64);
   color: var(--gold-soft);
 }
 
@@ -629,7 +629,7 @@ select {
   padding: 0 10px;
   border-radius: 8px;
   border: 1px solid var(--line);
-  background: rgba(7, 83, 118, 0.78);
+  background: rgba(6, 27, 45, 0.86);
   color: var(--gold-soft);
   font-size: 12px;
   font-weight: 700;
@@ -638,7 +638,7 @@ select {
 .page-hero {
   position: relative;
   background:
-    linear-gradient(90deg, rgba(6, 72, 102, 0.96), rgba(10, 98, 136, 0.68)),
+    linear-gradient(90deg, rgba(4, 21, 36, 0.96), rgba(8, 36, 58, 0.74)),
     var(--page-hero-image);
   background-position: center;
   background-size: cover;
@@ -697,7 +697,7 @@ select {
   position: absolute;
   inset: auto 0 0;
   padding: 42px 18px 18px;
-  background: linear-gradient(180deg, transparent, rgba(6, 72, 102, 0.92));
+  background: linear-gradient(180deg, transparent, rgba(4, 21, 36, 0.94));
   color: var(--gold-soft);
 }
 
@@ -806,24 +806,24 @@ select {
   padding: 0 10px;
   border-radius: 8px;
   border: 1px solid var(--line);
-  background: rgba(7, 83, 118, 0.78);
+  background: rgba(6, 27, 45, 0.86);
   color: var(--gold-soft);
   font-size: 12px;
   font-weight: 800;
 }
 
 .status.success {
-  background: rgba(7, 83, 118, 0.78);
+  background: rgba(6, 27, 45, 0.86);
   color: var(--success);
 }
 
 .status.warning {
-  background: rgba(7, 83, 118, 0.78);
+  background: rgba(6, 27, 45, 0.86);
   color: var(--warning);
 }
 
 .status.danger {
-  background: rgba(7, 83, 118, 0.78);
+  background: rgba(6, 27, 45, 0.86);
   color: var(--danger);
 }
 
