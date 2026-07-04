@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { CSSProperties } from "react";
-import { ArrowRight, CalendarCheck, ShipWheel, Sparkles } from "lucide-react";
+import { CalendarCheck, ShipWheel, Sparkles } from "lucide-react";
 import { PublicHeader } from "@/components/public-header";
 import { RoomCard } from "@/components/room-card";
 import { crewMembers } from "@/lib/crew-assets";
@@ -43,10 +43,6 @@ export default function HomePage() {
             <Link className="button" href="/kontakt">
               <CalendarCheck size={18} aria-hidden="true" />
               Rezervace
-            </Link>
-            <Link className="button secondary" href="/admin">
-              Otevrit dashboard
-              <ArrowRight size={18} aria-hidden="true" />
             </Link>
           </div>
         </div>

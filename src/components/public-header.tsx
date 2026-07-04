@@ -25,7 +25,6 @@ export function PublicHeader() {
               {link.label}
             </Link>
           ))}
-          <Link href="/admin">Admin</Link>
         </nav>
         <Link className="button" href="/kontakt">
           <CalendarCheck size={18} aria-hidden="true" />
