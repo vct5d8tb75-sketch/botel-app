@@ -7,11 +7,14 @@
   --blue-mist: #08243a;
   --gold: #d8b45f;
   --gold-soft: #f4df9f;
+  --heading-gold: #f2d58b;
+  --text: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.78);
   --white: #0b2b43;
   --mist: #041524;
   --line: rgba(244, 223, 159, 0.3);
-  --ink: #f4df9f;
-  --muted: #e2c779;
+  --ink: var(--text);
+  --muted: var(--text-muted);
   --success: #f4df9f;
   --warning: #f4df9f;
   --danger: #e5a38f;
@@ -55,7 +58,7 @@ select {
   z-index: 20;
   border-bottom: 1px solid rgba(244, 223, 159, 0.22);
   background: rgba(4, 21, 36, 0.96);
-  color: var(--gold-soft);
+  color: var(--text);
   backdrop-filter: blur(18px);
 }
 
@@ -87,9 +90,7 @@ select {
   width: 104px;
   height: 42px;
   object-fit: contain;
-  filter:
-    brightness(0) saturate(100%) invert(87%) sepia(32%) saturate(665%) hue-rotate(356deg) brightness(98%) contrast(91%)
-    drop-shadow(0 6px 14px rgba(0, 0, 0, 0.22));
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.22));
 }
 
 .nav-links {
@@ -99,7 +100,7 @@ select {
   gap: 14px;
   min-width: 0;
   overflow-x: auto;
-  color: var(--gold-soft);
+  color: var(--text);
   font-size: 13px;
   white-space: nowrap;
   scrollbar-width: none;
@@ -123,14 +124,14 @@ select {
   border: 1px solid rgba(244, 223, 159, 0.72);
   border-radius: 8px;
   background: rgba(6, 27, 45, 0.9);
-  color: var(--gold-soft);
+  color: var(--text);
   font-weight: 700;
 }
 
 .button.secondary {
   border-color: rgba(244, 223, 159, 0.38);
   background: rgba(10, 45, 71, 0.64);
-  color: var(--gold-soft);
+  color: var(--text);
 }
 
 .hero {
@@ -144,7 +145,7 @@ select {
     var(--hero-image);
   background-position: center;
   background-size: cover;
-  color: var(--gold-soft);
+  color: var(--text);
 }
 
 .photo-number {
@@ -159,7 +160,7 @@ select {
   border: 1px solid rgba(244, 223, 159, 0.72);
   border-radius: 8px;
   background: rgba(4, 21, 36, 0.92);
-  color: var(--gold-soft);
+  color: var(--text);
   box-shadow: 0 10px 30px rgba(7, 24, 47, 0.24);
   font-size: 12px;
   font-weight: 900;
@@ -185,13 +186,11 @@ select {
   display: block;
   width: min(250px, 68vw);
   height: auto;
-  filter:
-    brightness(0) saturate(100%) invert(87%) sepia(32%) saturate(665%) hue-rotate(356deg) brightness(98%) contrast(91%)
-    drop-shadow(0 10px 22px rgba(0, 0, 0, 0.24));
+  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.24));
 }
 
 .eyebrow {
-  color: var(--gold-soft);
+  color: var(--gold);
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 0;
@@ -202,17 +201,22 @@ select {
 .page-hero h1 {
   max-width: 760px;
   margin: 16px 0;
+  color: var(--heading-gold);
   font-family: var(--font-serif), Georgia, serif;
   font-size: clamp(48px, 8vw, 92px);
   line-height: 0.96;
   letter-spacing: 0;
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.18),
+    0 10px 32px rgba(0, 0, 0, 0.34);
+  -webkit-text-stroke: 0.45px rgba(216, 180, 95, 0.68);
 }
 
 .hero p,
 .page-hero p {
   max-width: 620px;
   margin: 14px 0 28px;
-  color: var(--gold-soft);
+  color: var(--text);
   font-size: 18px;
   line-height: 1.7;
 }
@@ -229,7 +233,7 @@ select {
 
 .section.dark {
   background: linear-gradient(135deg, var(--navy), var(--blue-mist));
-  color: var(--gold-soft);
+  color: var(--text);
 }
 
 .section-inner {
@@ -248,9 +252,14 @@ select {
 .section-head h2,
 .page-section h2 {
   margin: 0;
+  color: var(--heading-gold);
   font-family: var(--font-serif), Georgia, serif;
   font-size: clamp(32px, 5vw, 52px);
   line-height: 1;
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.14),
+    0 8px 26px rgba(0, 0, 0, 0.28);
+  -webkit-text-stroke: 0.38px rgba(216, 180, 95, 0.66);
 }
 
 .section-head p {
@@ -278,9 +287,14 @@ select {
 
 .photo-copy h2 {
   margin: 12px 0 16px;
+  color: var(--heading-gold);
   font-family: var(--font-serif), Georgia, serif;
   font-size: clamp(34px, 5vw, 56px);
   line-height: 1;
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.14),
+    0 8px 26px rgba(0, 0, 0, 0.28);
+  -webkit-text-stroke: 0.38px rgba(216, 180, 95, 0.66);
 }
 
 .photo-copy p {
@@ -335,9 +349,14 @@ select {
 .crew-copy h2 {
   max-width: 680px;
   margin: 12px 0 18px;
+  color: var(--heading-gold);
   font-family: var(--font-serif), Georgia, serif;
   font-size: clamp(38px, 6vw, 68px);
   line-height: 0.98;
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.14),
+    0 8px 26px rgba(0, 0, 0, 0.28);
+  -webkit-text-stroke: 0.38px rgba(216, 180, 95, 0.66);
 }
 
 .crew-copy > p {
@@ -359,7 +378,7 @@ select {
 }
 
 .crew-card strong {
-  color: var(--gold-soft);
+  color: var(--text);
   font-size: 20px;
 }
 
@@ -514,9 +533,14 @@ select {
 .event-cta h2,
 .wedding-panel h2 {
   margin: 8px 0 12px;
+  color: var(--heading-gold);
   font-family: var(--font-serif), Georgia, serif;
   font-size: clamp(30px, 4vw, 46px);
   line-height: 1;
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.14),
+    0 8px 26px rgba(0, 0, 0, 0.28);
+  -webkit-text-stroke: 0.34px rgba(216, 180, 95, 0.66);
 }
 
 .event-cta p {
@@ -535,7 +559,7 @@ select {
 .button.secondary.light {
   border-color: rgba(244, 223, 159, 0.42);
   background: rgba(10, 45, 71, 0.64);
-  color: var(--gold-soft);
+  color: var(--text);
 }
 
 .wedding-layout {
@@ -589,7 +613,7 @@ select {
 
 .capacity-item strong {
   display: block;
-  color: var(--gold-soft);
+  color: var(--text);
   font-family: var(--font-serif), Georgia, serif;
   font-size: 34px;
   line-height: 1;
@@ -630,7 +654,7 @@ select {
   border-radius: 8px;
   border: 1px solid var(--line);
   background: rgba(6, 27, 45, 0.86);
-  color: var(--gold-soft);
+  color: var(--text);
   font-size: 12px;
   font-weight: 700;
 }
@@ -642,7 +666,7 @@ select {
     var(--page-hero-image);
   background-position: center;
   background-size: cover;
-  color: var(--gold-soft);
+  color: var(--text);
   padding: 96px 24px 72px;
 }
 
@@ -698,7 +722,7 @@ select {
   inset: auto 0 0;
   padding: 42px 18px 18px;
   background: linear-gradient(180deg, transparent, rgba(4, 21, 36, 0.94));
-  color: var(--gold-soft);
+  color: var(--text);
 }
 
 .gallery-caption span {
@@ -726,7 +750,7 @@ select {
   height: 100vh;
   padding: 24px;
   background: var(--navy);
-  color: var(--gold-soft);
+  color: var(--text);
 }
 
 .admin-nav {
@@ -742,12 +766,12 @@ select {
   min-height: 42px;
   padding: 0 12px;
   border-radius: 8px;
-  color: var(--gold-soft);
+  color: var(--text);
 }
 
 .admin-nav a:hover {
   background: rgba(244, 223, 159, 0.1);
-  color: var(--gold-soft);
+  color: var(--text);
 }
 
 .admin-main {
@@ -764,8 +788,13 @@ select {
 
 .admin-header h1 {
   margin: 0;
+  color: var(--heading-gold);
   font-size: clamp(30px, 4vw, 48px);
   line-height: 1;
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.14),
+    0 8px 26px rgba(0, 0, 0, 0.28);
+  -webkit-text-stroke: 0.34px rgba(216, 180, 95, 0.66);
 }
 
 .metric-grid {
@@ -807,7 +836,7 @@ select {
   border-radius: 8px;
   border: 1px solid var(--line);
   background: rgba(6, 27, 45, 0.86);
-  color: var(--gold-soft);
+  color: var(--text);
   font-size: 12px;
   font-weight: 800;
 }
