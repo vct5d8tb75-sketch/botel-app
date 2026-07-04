@@ -18,7 +18,7 @@ const departmentLogos = [
 ];
 
 export default function HomePage() {
-  const heroImage = "/marina-gallery/08.jpg";
+  const heroImage = "/homepage-hero-river.jpg";
   const storyImage = "/marina-gallery/09.jpg";
   const crewImage = crewMembers[0].src as `/${string}`;
   const heroStyle = {
