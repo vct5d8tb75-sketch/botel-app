@@ -765,6 +765,69 @@ select {
   font-weight: 800;
 }
 
+.terrace-page {
+  display: grid;
+  gap: 34px;
+}
+
+.terrace-photo-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.terrace-photo-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.22fr) minmax(0, 0.78fr);
+  gap: 24px;
+  align-items: center;
+  padding: 18px;
+  border: 1px solid rgba(244, 223, 159, 0.28);
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(10, 45, 71, 0.9), rgba(4, 21, 36, 0.94));
+  box-shadow: var(--shadow);
+}
+
+.terrace-photo-card:nth-child(even) {
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+}
+
+.terrace-photo-card:nth-child(even) figure {
+  order: 2;
+}
+
+.terrace-photo-card figure {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 8px;
+  background: rgba(4, 21, 36, 0.7);
+}
+
+.terrace-photo-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.terrace-photo-card h2 {
+  margin: 8px 0 12px;
+  color: var(--heading-gold);
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1;
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.14),
+    0 8px 26px rgba(0, 0, 0, 0.28);
+  -webkit-text-stroke: 0.34px rgba(216, 180, 95, 0.66);
+}
+
+.terrace-photo-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.68;
+}
+
 .foundation-page {
   display: grid;
   gap: 34px;
@@ -1115,10 +1178,16 @@ select {
   .wedding-hero-story,
   .wedding-ring-section,
   .foundation-intro,
-  .foundation-layout {
+  .foundation-layout,
+  .terrace-photo-card,
+  .terrace-photo-card:nth-child(even) {
     align-items: flex-start;
     grid-template-columns: 1fr;
     flex-direction: column;
+  }
+
+  .terrace-photo-card:nth-child(even) figure {
+    order: 0;
   }
 
   .wedding-gallery-strip {
@@ -1222,5 +1291,13 @@ select {
 
   .foundation-note {
     grid-template-columns: 1fr;
+  }
+
+  .terrace-page {
+    gap: 24px;
+  }
+
+  .terrace-photo-card {
+    padding: 14px;
   }
 }

@@ -19,6 +19,8 @@ const photoIndex = new Map<string, number>([
   ["/crew/captain-captain.jpg", 17],
   ["/homepage-hero-river.jpg?v=2", 18],
   ["/homepage-deck-event.jpg", 19],
+  ["/terrace-sun-deck.jpg", 20],
+  ["/terrace-sun-deck-bar.jpg", 21],
 ]);
 
 export function getPhotoNumber(src: string) {
