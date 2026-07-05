@@ -23,6 +23,7 @@ src/
     restaurace/
     terasa/
     eventy/
+    nadacni-fond/
     galerie/
     kontakt/
     admin/
@@ -41,6 +42,7 @@ src/
 - `/restaurace`
 - `/terasa`
 - `/eventy`
+- `/nadacni-fond`
 - `/galerie`
 - `/kontakt`
 
