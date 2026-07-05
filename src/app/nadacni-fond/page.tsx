@@ -39,7 +39,7 @@ export default function FoundationPage() {
     <PublicPage
       eyebrow="Nadacni fond The Botel"
       title="Ubytovani pro pacienty Protonoveho centra"
-      description="Pripravujeme propojeni The Botel s nadacnim fondem, ktery pomuze pacientum a jejich doprovodu zvladnout pobyt v Praze behem lecby."
+      description="Pripravujeme propojeni The Botel s nadacnim fondem, ktery pomuze pacientum a jejich doprovodu zajistit klidne ubytovani v Praze behem lecby."
     >
       <section className="page-section foundation-page">
         <div className="foundation-intro">
