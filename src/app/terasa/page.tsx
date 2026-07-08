@@ -22,7 +22,7 @@ const terracePhotos = [
     src: "/terrace-sun-deck.jpg",
     eyebrow: "The Sun Deck",
     title: "Letni lounge sezeni nad rekou",
-    text: "Nova terasa je pripravena pro pohodlne denni sezeni, aperitiv, kavu i vecerni program. Doplnene fotky ukazuji realny smer atmosfery s hosty.",
+    text: "Terasa je pripravena pro pohodlne denni sezeni, aperitiv, kavu i vecerni program. Doplnene fotky ukazuji realny smer atmosfery s hosty.",
   },
   {
     src: "/terrace-sun-deck-bar.jpg",
