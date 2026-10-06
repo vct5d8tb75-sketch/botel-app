@@ -42,7 +42,7 @@ export default function HomePage() {
             <img className="hero-logo" src={publicAsset("/botel-logo-negative.png")} alt="The Botel" />
           </div>
           <span className="eyebrow">Boutique hotel na Vltavě · Praha</span>
-          <h1>Spěte s námi<br />na vodě.</h1>
+          <h1>Spěte s námi<br />na klidné vodě.</h1>
           <p>
             Unikátní botel na Vltavě, kde se hotelový komfort potkává s atmosférou lodi.
             Přijeďte na noc, večeři, drink nebo večer, na který se nezapomíná.
