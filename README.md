@@ -58,6 +58,16 @@ src/
 - `/admin/reporty`
 - `/admin/nastaveni`
 
+## Janova izolovaná pracovní kopie
+
+- Pracovní větev: `jan-test`.
+- Samostatný veřejný náhled: https://botel-jan-test.stejway-2335.chatgpt.site/
+- Náhled je publikovaný snímek této větve. Po úpravách je nutné znovu sestavit statický export a publikovat jej na tento samostatný hosting; samotný push náhled neaktualizuje.
+- Pro samostatný hosting sestavujte bez `GITHUB_PAGES=true` a bez `NEXT_PUBLIC_BASE_PATH` (náhled běží v kořeni domény).
+- Hlavní větev a sdílený GitHub Pages web ponechte beze změn. Nespouštějte ručně workflow Pages z `jan-test`.
+- Návrat změn řešte pull requestem `jan-test → main`, kontrolou aktuálních změn spolupracovníků, konfliktů a sestavení. Případné konflikty řešte v pracovní větvi a slučujte až po schválení.
+- Při slučování přeneste jen schválené změny webu; instrukce pro Janův náhled v README a AGENTS.md patří do této pracovní větve.
+
 ## Spusteni
 
 Verejna GitHub Pages adresa:
@@ -73,8 +83,8 @@ Projekt je nastaveny tak, aby se dal upravovat bez lokalniho PC:
 1. Otevri repozitar: `https://github.com/vct5d8tb75-sketch/botel-app`
 2. Vyber soubor, ktery chces upravit.
 3. Klikni na ikonu tuzky `Edit this file`.
-4. Uloz zmenu pres `Commit changes` primo do vetve `main`.
-5. GitHub Actions automaticky spusti build a nasadi web na GitHub Pages.
+4. Uloz zmenu pres `Commit changes` primo do vetve `jan-test`.
+5. Změna zůstává ve větvi `jan-test`; samostatný náhled aktualizujte novým sestavením a publikováním.
 
 Stav nasazeni je videt v zalozce `Actions`.
 
@@ -87,7 +97,7 @@ Postup:
 1. Otevri repozitar: `https://github.com/vct5d8tb75-sketch/botel-app`
 2. Klikni na `Code`.
 3. Otevri zalozku `Codespaces`.
-4. Vyber `Create codespace on main`.
+4. Vyber `Create codespace on jan-test`.
 5. Codespace automaticky nainstaluje zavislosti.
 6. Spust `npm run dev`.
 
@@ -103,7 +113,7 @@ Pri dalsi praci staci v Codexu zadat:
 Uprav repozitar https://github.com/vct5d8tb75-sketch/botel-app
 ```
 
-Po zmene ma Codex pracovat primo v GitHub repozitari, vytvorit commit do `main`, pockat na GitHub Actions a overit zivy web:
+Po zmene ma Codex pracovat primo v GitHub repozitari, vytvorit commit pouze do `jan-test` a na vyžádání aktualizovat a ověřit samostatný náhled:
 
 ```txt
 https://vct5d8tb75-sketch.github.io/botel-app/
