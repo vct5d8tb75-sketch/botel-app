@@ -43,7 +43,7 @@ export default function RoomsPage() {
                 <p className="room-meta" style={{ margin: 0 }}>
                   {category === "EKONOMY" ? "Prohlédněte si pokoje, jejich interiéry a koupelny. Další informace brzy doplníme." : "Fotografie a podrobnosti o této kategorii brzy doplníme."}
                 </p>
-                {category === "EKONOMY" && <Link className="button" href="/pokoje/ekonomy/" style={{ marginTop: "20px" }}>Prohlédnout 25 fotografií</Link>}
+                {category === "EKONOMY" && <Link className="button" href="/pokoje/ekonomy/" style={{ marginTop: "20px" }}>Galerie</Link>}
               </div>
             </article>
           ))}
