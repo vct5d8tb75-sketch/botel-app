@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import { publicAsset } from "@/lib/site-assets";
 import styles from "./room-gallery.module.css";
 
-const photos = [
+const economyPhotos = [
   [748, "Pokoj s postelí a červenými křesly"],
   [753, "Dvoulůžko s připravenými ručníky"],
   [758, "Pokoj se dvěma oddělenými postelemi"],
@@ -34,7 +34,12 @@ const photos = [
 
 const filename = (number: number) => `img_${String(number).padStart(4, "0")}.webp`;
 
-export function EconomyGallery() {
+export function EconomyGallery({ photos = economyPhotos, category = "EKONOMY", directory = "ekonomy", thumbnails = true }: {
+  photos?: readonly (readonly [number, string])[];
+  category?: string;
+  directory?: string;
+  thumbnails?: boolean;
+}) {
   const dialog = useRef<HTMLDialogElement>(null);
   const [index, setIndex] = useState(0);
   const [opened, setOpened] = useState(false);
@@ -49,20 +54,20 @@ export function EconomyGallery() {
             setOpened(true);
             dialog.current?.showModal();
           }}>
-            <img src={publicAsset(`/rooms/ekonomy/thumbs/${filename(number)}`)} alt={alt} loading="lazy" width={640} height={427} />
+            <img src={publicAsset(`/rooms/${directory}/${thumbnails ? "thumbs/" : ""}${filename(number)}`)} alt={alt} loading="lazy" width={640} height={427} />
           </button>
         ))}
       </div>
-      <dialog ref={dialog} className={styles.dialog} aria-label="Fotogalerie pokojů EKONOMY" onClose={() => setOpened(false)} onClick={(event) => { if (event.target === event.currentTarget) dialog.current?.close(); }} onKeyDown={(event) => {
+      <dialog ref={dialog} className={styles.dialog} aria-label={`Fotogalerie pokojů ${category}`} onClose={() => setOpened(false)} onClick={(event) => { if (event.target === event.currentTarget) dialog.current?.close(); }} onKeyDown={(event) => {
         if (event.key === "ArrowRight") { event.preventDefault(); move(1); }
         if (event.key === "ArrowLeft") { event.preventDefault(); move(-1); }
       }}>
         <div className={styles.viewer}>
           <div className={styles.toolbar}>
-            <span aria-live="polite">EKONOMY · {index + 1} / {photos.length}</span>
+            <span aria-live="polite">{category} · {index + 1} / {photos.length}</span>
             <button type="button" onClick={() => dialog.current?.close()} autoFocus aria-label="Zavřít galerii">Zavřít ×</button>
           </div>
-          {opened && <img className={styles.fullImage} src={publicAsset(`/rooms/ekonomy/${filename(photos[index][0])}`)} alt={photos[index][1]} />}
+          {opened && <img className={styles.fullImage} src={publicAsset(`/rooms/${directory}/${filename(photos[index][0])}`)} alt={photos[index][1]} />}
           <div className={styles.toolbar}>
             <button type="button" onClick={() => move(-1)} aria-label="Předchozí fotografie">← Předchozí</button>
             <button type="button" onClick={() => move(1)} aria-label="Další fotografie">Další →</button>
@@ -72,4 +77,5 @@ export function EconomyGallery() {
     </>
   );
 }
+
 
