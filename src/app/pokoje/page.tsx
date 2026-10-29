@@ -4,8 +4,8 @@ import { publicAsset } from "@/lib/site-assets";
 import { PublicPage } from "@/components/public-page";
 
 const categories = [
-  { name: "EKONOMY", gallery: "/pokoje/ekonomy/", image: "/rooms/ekonomy/thumbs/img_0748.webp" },
-  { name: "SUPERRIOR", gallery: "/pokoje/superrior/", image: "/rooms/superrior/img_0939.webp" },
+  { name: "EKONOMY", gallery: "/pokoje/ekonomy/", image: "/rooms/ekonomy/thumbs/img_0762.webp" },
+  { name: "SUPERRIOR", gallery: "/pokoje/superrior/", image: "/rooms/superrior/img_0471.webp" },
   { name: "DELUXE", gallery: null, image: null },
 ] as const;
 
