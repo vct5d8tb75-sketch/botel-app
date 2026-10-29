@@ -6,7 +6,7 @@ import { PublicPage } from "@/components/public-page";
 const categories = [
   { name: "EKONOMY", gallery: "/pokoje/ekonomy/", image: "/rooms/ekonomy/thumbs/img_0762.webp" },
   { name: "SUPERRIOR", gallery: "/pokoje/superrior/", image: "/rooms/superrior/img_0471.webp" },
-  { name: "DELUXE", gallery: null, image: null },
+  { name: "DELUXE", gallery: "/pokoje/deluxe/", image: "/rooms/deluxe/img_0929.webp" },
 ] as const;
 
 export default function RoomsPage() {
@@ -42,4 +42,5 @@ export default function RoomsPage() {
     </PublicPage>
   );
 }
+
 
