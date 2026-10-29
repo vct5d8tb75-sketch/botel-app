@@ -14,6 +14,10 @@ This repository is the source of truth for The Botel web application.
 - The separate Jan preview is hosted at `https://botel-jan-test.stejway-2335.chatgpt.site/`. It is a published snapshot; GitHub pushes do not automatically update it. Rebuild and republish the snapshot from `jan-test` when a preview update is requested.
 - Future integration must use a pull request from `jan-test` to `main`. Refresh the comparison against current `main`, check conflicts and tests, preserve collaborators' changes, and obtain approval before merging.
 
+## Room category galleries
+
+- Use the exact button label `Galerie` for EKONOMY and, once photos are supplied, SUPERRIOR and DELUXE. Do not include a photo count in the category gallery button label.
+
 ## Image Policy
 
 - Use only images provided by the user or taken from the user's existing website gallery and committed into `public/`.
