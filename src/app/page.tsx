@@ -2,10 +2,9 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import { ArrowRight, CalendarCheck, HeartHandshake, Sparkles } from "lucide-react";
 import { PublicHeader } from "@/components/public-header";
-import { RoomCard } from "@/components/room-card";
+import { RoomCategoryCards } from "@/components/room-category-cards";
 import { crewMembers } from "@/lib/crew-assets";
 import { formatPhotoNumber } from "@/lib/photo-index";
-import { rooms } from "@/lib/mock-data";
 import { publicAsset } from "@/lib/site-assets";
 
 const highlights = [
@@ -137,9 +136,7 @@ export default function HomePage() {
             </div>
             <Link className="text-link" href="/pokoje">Všechny pokoje <ArrowRight size={16} aria-hidden="true" /></Link>
           </div>
-          <div className="card-grid">
-            {rooms.map((room) => <RoomCard key={room.id} room={room} />)}
-          </div>
+          <RoomCategoryCards />
         </div>
       </section>
 
@@ -199,3 +196,4 @@ export default function HomePage() {
     </main>
   );
 }
+
