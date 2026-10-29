@@ -45,7 +45,7 @@ export default function HomePage() {
           <h1>Spěte s námi<br />na klidné vodě.</h1>
           <p>
             Unikátní botel na Vltavě, kde se hotelový komfort potkává s atmosférou lodi.
-            Přijeďte na noc, večeři, drink nebo večer, na který se nezapomíná.
+            Rezervujte si noc, nebo si jen v letní sezóně přijďte posedět na letní terasu SUNDECK a načerpejte síly výjimečným klidem a pohledem na vodu i okolí
           </p>
           <div className="hero-actions">
             <Link className="button" href="/kontakt">
