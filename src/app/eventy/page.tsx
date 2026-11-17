@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { PublicPage } from "@/components/public-page";
 
 const eventSpaces = [
@@ -50,7 +51,7 @@ export default function EventsPage() {
               ubytovanim a kontaktem pro poptavku.
             </p>
           </div>
-          <a className="button" href="/svatby">Otevrit svatby</a>
+          <Link className="button" href="/svatby">Otevrit svatby</Link>
         </div>
       </section>
     </PublicPage>
