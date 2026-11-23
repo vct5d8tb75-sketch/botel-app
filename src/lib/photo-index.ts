@@ -1,4 +1,4 @@
-// Temporary labels for reviewing and replacing photos before launch.
+// Temporary, unique labels for reviewing every active photo before launch.
 const photoIndex = new Map<string, number>([
   ["/marina-gallery/02.jpg", 1],
   ["/marina-gallery/01.jpg", 2],
@@ -18,16 +18,76 @@ const photoIndex = new Map<string, number>([
   ["/marina-gallery/interior/interior-08.jpg", 16],
   ["/crew/captain-captain.jpg", 17],
   ["/homepage-hero-river.jpg?v=2", 18],
-  ["/homepage-deck-event.jpg", 19],
+  ["/homepage-vltava-perspective.webp", 19],
   ["/terrace-sun-deck.jpg", 20],
   ["/terrace-sun-deck-bar.jpg", 21],
+  ["/rooms/ekonomy/img_0001.webp", 22],
+  ["/rooms/ekonomy/img_0002.webp", 23],
+  ["/rooms/ekonomy/img_0003.webp", 24],
+  ["/rooms/ekonomy/img_0004.webp", 25],
+  ["/rooms/ekonomy/img_0005.webp", 26],
+  ["/rooms/ekonomy/img_0006.webp", 27],
+  ["/rooms/ekonomy/img_0007.webp", 28],
+  ["/rooms/ekonomy/img_0008.webp", 29],
+  ["/rooms/ekonomy/img_0009.webp", 30],
+  ["/rooms/ekonomy/img_0010.webp", 31],
+  ["/rooms/ekonomy/img_0011.webp", 32],
+  ["/rooms/ekonomy/img_0012.webp", 33],
+  ["/rooms/ekonomy/img_0013.webp", 34],
+  ["/rooms/ekonomy/img_0014.webp", 35],
+  ["/rooms/ekonomy/img_0015.webp", 36],
+  ["/rooms/ekonomy/img_0016.webp", 37],
+  ["/rooms/ekonomy/img_0017.webp", 38],
+  ["/rooms/ekonomy/img_0018.webp", 39],
+  ["/rooms/ekonomy/img_0019.webp", 40],
+  ["/rooms/superrior/img_0001.webp", 41],
+  ["/rooms/superrior/img_0002.webp", 42],
+  ["/rooms/superrior/img_0003.webp", 43],
+  ["/rooms/superrior/img_0004.webp", 44],
+  ["/rooms/superrior/img_0005.webp", 45],
+  ["/rooms/superrior/img_0006.webp", 46],
+  ["/rooms/superrior/img_0007.webp", 47],
+  ["/rooms/superrior/img_0008.webp", 48],
+  ["/rooms/superrior/img_0009.webp", 49],
+  ["/rooms/superrior/img_0010.webp", 50],
+  ["/rooms/superrior/img_0011.webp", 51],
+  ["/rooms/superrior/img_0012.webp", 52],
+  ["/rooms/superrior/img_0013.webp", 53],
+  ["/rooms/superrior/img_0014.webp", 54],
+  ["/rooms/superrior/img_0015.webp", 55],
+  ["/rooms/superrior/img_0016.webp", 56],
+  ["/rooms/superrior/img_0017.webp", 57],
+  ["/rooms/deluxe/img_0001.webp", 58],
+  ["/rooms/deluxe/img_0002.webp", 59],
+  ["/rooms/deluxe/img_0003.webp", 60],
+  ["/rooms/deluxe/img_0004.webp", 61],
+  ["/rooms/deluxe/img_0005.webp", 62],
+  ["/rooms/deluxe/img_0006.webp", 63],
+  ["/rooms/deluxe/img_0007.webp", 64],
+  ["/rooms/deluxe/img_0008.webp", 65],
+  ["/rooms/deluxe/img_0009.webp", 66],
+  ["/rooms/deluxe/img_0010.webp", 67],
+  ["/rooms/deluxe/img_0011.webp", 68],
+  ["/rooms/deluxe/img_0012.webp", 69],
+  ["/rooms/deluxe/img_0013.webp", 70],
+  ["/rooms/deluxe/img_0014.webp", 71],
+  ["/rooms/deluxe/img_0015.webp", 72],
+  ["/rooms/deluxe/img_0016.webp", 73],
+  ["/weddings/wedding-01.jpg", 74],
+  ["/weddings/wedding-02.jpg", 75],
+  ["/weddings/wedding-03.jpg", 76],
+  ["/weddings/wedding-04.jpg", 77],
+  ["/weddings/wedding-05.jpg", 78],
+  ["/weddings/wedding-06.jpg", 79],
 ]);
 
+const canonicalPhoto = (src: string) => src.split("?")[0].replace("/thumbs/", "/");
+
 export function getPhotoNumber(src: string) {
-  return photoIndex.get(src);
+  return photoIndex.get(src) ?? photoIndex.get(canonicalPhoto(src));
 }
 
 export function formatPhotoNumber(src: string) {
   const number = getPhotoNumber(src);
-  return number ? `Foto ${String(number).padStart(2, "0")}` : null;
+  return number ? String(number).padStart(2, "0") : null;
 }

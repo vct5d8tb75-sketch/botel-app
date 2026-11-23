@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { formatPhotoNumber } from "@/lib/photo-index";
 import { CalendarCheck, Heart, MapPin, Phone, Sparkles, Utensils } from "lucide-react";
 import { PublicPage } from "@/components/public-page";
 import { publicAsset } from "@/lib/site-assets";
@@ -67,7 +68,7 @@ export default function WeddingsPage() {
             </p>
           </div>
           <figure className="wedding-photo-frame">
-            <span className="photo-number">01</span>
+            <span className="photo-number">{formatPhotoNumber("/weddings/wedding-01.jpg")}</span>
             <img
               className="wedding-photo"
               src={publicAsset("/weddings/wedding-01.jpg")}
@@ -103,7 +104,7 @@ export default function WeddingsPage() {
 
         <div className="wedding-ring-section">
           <figure className="wedding-photo-frame wedding-ring-photo">
-            <span className="photo-number">04</span>
+            <span className="photo-number">{formatPhotoNumber("/weddings/wedding-04.jpg")}</span>
             <img
               className="wedding-photo"
               src={publicAsset("/weddings/wedding-04.jpg")}
@@ -153,7 +154,7 @@ export default function WeddingsPage() {
         <div className="wedding-gallery-strip">
           {weddingGallery.map((item) => (
             <figure className="wedding-gallery-item" key={item.src}>
-              <span className="photo-number">{item.label}</span>
+              <span className="photo-number">{formatPhotoNumber(item.src)}</span>
               <img src={publicAsset(item.src as `/${string}`)} alt={item.title} />
               <figcaption>{item.title}</figcaption>
             </figure>

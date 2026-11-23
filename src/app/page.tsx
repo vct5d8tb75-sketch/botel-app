@@ -24,7 +24,7 @@ const departmentLogos = [
 
 export default function HomePage() {
   const heroImage = "/homepage-hero-river.jpg?v=2";
-  const storyImage = "/homepage-deck-event.jpg";
+  const storyImage = "/homepage-vltava-perspective.webp";
   const crewImage = crewMembers[0].src as `/${string}`;
   const heroStyle = {
     "--hero-image": `url("${publicAsset(heroImage)}")`,
@@ -80,8 +80,8 @@ export default function HomePage() {
               <article className="highlight-card" key={item.title}>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
-                <Link className="highlight-link" href={item.href} aria-label={item.title === "Kajuty s výhledem" ? "Galerie pokojů" : `Objevte více: ${item.title}`}>
-                  Objevte více <ArrowRight size={16} aria-hidden="true" /> <span className="eyebrow">{item.title === "Kajuty s výhledem" ? "Galerie pokojů" : "THE BOTEL"}</span>
+                <Link className="highlight-link" href={item.href} aria-label={item.title === "Kajuty s výhledem" ? "Galerie pokojů" : item.title === "Restaurace & bary" ? "Restaurace & bary" : "Terasa"}>
+                  Objevte více <ArrowRight size={16} aria-hidden="true" /> <span className="eyebrow">{item.title === "Kajuty s výhledem" ? "Galerie pokojů" : item.title === "Restaurace & bary" ? "Restaurace & bary" : "Terasa"}</span>
                 </Link>
               </article>
             ))}
@@ -101,7 +101,7 @@ export default function HomePage() {
             <Link className="text-link" href="/galerie">Prohlédnout galerii <ArrowRight size={16} aria-hidden="true" /></Link>
           </div>
           <div className="photo-frame">
-            <img className="wide-photo" src={publicAsset(storyImage)} alt="Večer na palubě The Botel" />
+            <img className="wide-photo" src={publicAsset(storyImage)} alt="Výhled z terasy The Botel na Vltavu a Prahu" />
             <span className="photo-number" aria-hidden="true">{formatPhotoNumber(storyImage)}</span>
           </div>
         </div>

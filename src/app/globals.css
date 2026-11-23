@@ -1368,3 +1368,8 @@ select {
     padding: 14px;
   }
 }
+
+.room-photo-link {
+  position: relative;
+  display: block;
+}

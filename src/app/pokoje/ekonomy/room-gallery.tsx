@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { formatPhotoNumber } from "@/lib/photo-index";
 import { publicAsset } from "@/lib/site-assets";
 import styles from "./room-gallery.module.css";
 
@@ -55,6 +56,7 @@ export function EconomyGallery({ photos = economyPhotos, category = "EKONOMY", d
             dialog.current?.showModal();
           }}>
             <img src={publicAsset(`/rooms/${directory}/${thumbnails ? "thumbs/" : ""}${filename(number)}`)} alt={alt} loading="lazy" width={640} height={427} />
+            <span className="photo-number">{formatPhotoNumber(`/rooms/${directory}/${filename(number)}`)}</span>
           </button>
         ))}
       </div>
@@ -64,7 +66,7 @@ export function EconomyGallery({ photos = economyPhotos, category = "EKONOMY", d
       }}>
         <div className={styles.viewer}>
           <div className={styles.toolbar}>
-            <span aria-live="polite">{category} · {index + 1} / {photos.length}</span>
+            <span aria-live="polite">{formatPhotoNumber(`/rooms/${directory}/${filename(photos[index][0])}`)} · {index + 1} / {photos.length}</span>
             <button type="button" onClick={() => dialog.current?.close()} autoFocus aria-label="Zavřít galerii">Zavřít ×</button>
           </div>
           {opened && <img className={styles.fullImage} src={publicAsset(`/rooms/${directory}/${filename(photos[index][0])}`)} alt={photos[index][1]} />}

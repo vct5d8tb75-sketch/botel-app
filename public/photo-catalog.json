@@ -1,0 +1,589 @@
+{
+  "temporary_review_labels": true,
+  "photos": [
+    {
+      "asset": "/marina-gallery/02.jpg",
+      "number": 1
+    },
+    {
+      "asset": "/marina-gallery/01.jpg",
+      "number": 2
+    },
+    {
+      "asset": "/marina-gallery/03.jpg",
+      "number": 3
+    },
+    {
+      "asset": "/marina-gallery/06.jpg",
+      "number": 4
+    },
+    {
+      "asset": "/marina-gallery/09.jpg",
+      "number": 5
+    },
+    {
+      "asset": "/marina-gallery/11.jpg",
+      "number": 6
+    },
+    {
+      "asset": "/marina-gallery/10.jpg",
+      "number": 7
+    },
+    {
+      "asset": "/marina-gallery/12.jpg",
+      "number": 8
+    },
+    {
+      "asset": "/marina-gallery/interior/interior-01.jpg",
+      "number": 9
+    },
+    {
+      "asset": "/marina-gallery/interior/interior-02.jpg",
+      "number": 10
+    },
+    {
+      "asset": "/marina-gallery/interior/interior-03.jpg",
+      "number": 11
+    },
+    {
+      "asset": "/marina-gallery/interior/interior-04.jpg",
+      "number": 12
+    },
+    {
+      "asset": "/marina-gallery/interior/interior-05.jpg",
+      "number": 13
+    },
+    {
+      "asset": "/marina-gallery/interior/interior-06.jpg",
+      "number": 14
+    },
+    {
+      "asset": "/marina-gallery/interior/interior-07.jpg",
+      "number": 15
+    },
+    {
+      "asset": "/marina-gallery/interior/interior-08.jpg",
+      "number": 16
+    },
+    {
+      "asset": "/crew/captain-captain.jpg",
+      "number": 17
+    },
+    {
+      "asset": "/homepage-hero-river.jpg?v=2",
+      "number": 18
+    },
+    {
+      "asset": "/homepage-vltava-perspective.webp",
+      "number": 19,
+      "original": "IMG_0591.JPG",
+      "source_sha256": "8829a7af9729337d574c9055d26245b910a9cf0526ea8fd1afef41239e2d57f2"
+    },
+    {
+      "asset": "/terrace-sun-deck.jpg",
+      "number": 20
+    },
+    {
+      "asset": "/terrace-sun-deck-bar.jpg",
+      "number": 21
+    },
+    {
+      "id": "ECONOMY 01",
+      "original": "1.JPG",
+      "asset": "/rooms/ekonomy/img_0001.webp",
+      "description": "Pokoj s postelemi a červenými křesly",
+      "source_sha256": "0fb283b6ae775fc9b8b9afe00d0f3440f40ed8b8ee8e148ec026f474cae12422",
+      "review_number": 22,
+      "number": 22
+    },
+    {
+      "id": "ECONOMY 02",
+      "original": "2.JPG",
+      "asset": "/rooms/ekonomy/img_0002.webp",
+      "description": "Otevřená šatní skříň s trezorem",
+      "source_sha256": "269f52d7dcfb0295dbefe4275ee32c21325a2323ef8bcaf36a448822b5123839",
+      "review_number": 23,
+      "number": 23
+    },
+    {
+      "id": "ECONOMY 03",
+      "original": "3.JPG",
+      "asset": "/rooms/ekonomy/img_0003.webp",
+      "description": "Pracovní kout se zrcadlem a konvicí",
+      "source_sha256": "e81d04841ba8d480fd01088cecffec569750ab959a779e240d51708f2a61f422",
+      "review_number": 24,
+      "number": 24
+    },
+    {
+      "id": "ECONOMY 04",
+      "original": "4.JPG",
+      "asset": "/rooms/ekonomy/img_0004.webp",
+      "description": "Pracovní stolek a dřevěná šatní skříň",
+      "source_sha256": "aa378b9c5e22e905438cf385b5fa61dbf301b0cf912cf0c8a20cfdf4f10f6e7e",
+      "review_number": 25,
+      "number": 25
+    },
+    {
+      "id": "ECONOMY 05",
+      "original": "5.JPG",
+      "asset": "/rooms/ekonomy/img_0005.webp",
+      "description": "Dvoulůžko s modrými polštáři a ručníky",
+      "source_sha256": "fa8c58ba5630a8fff491d37a52c6dba0084325a05393b62aa466f7ebda8e40e9",
+      "review_number": 26,
+      "number": 26
+    },
+    {
+      "id": "ECONOMY 06",
+      "original": "6.JPG",
+      "asset": "/rooms/ekonomy/img_0006.webp",
+      "description": "Jednolůžko vedle pracovního stolku",
+      "source_sha256": "2013bc1d666a29361edd0df7e1081b320be95ba9c87fcf18a536893fc90030b6",
+      "review_number": 27,
+      "number": 27
+    },
+    {
+      "id": "ECONOMY 07",
+      "original": "7.JPG",
+      "asset": "/rooms/ekonomy/img_0007.webp",
+      "description": "Postel a posezení u okna s výhledem na řeku",
+      "source_sha256": "a53cf56c6c78c73df7e3abdefe85787de7226a18eb399ee0bcc74d2db1b090c4",
+      "review_number": 28,
+      "number": 28
+    },
+    {
+      "id": "ECONOMY 08",
+      "original": "8.JPG",
+      "asset": "/rooms/ekonomy/img_0008.webp",
+      "description": "Dvě oddělené postele a pracovní stolek",
+      "source_sha256": "41db835cf9fa36dda0cf96001d388fad8a8ce23dac2e90a12fd80c11a959b8db",
+      "review_number": 29,
+      "number": 29
+    },
+    {
+      "id": "ECONOMY 09",
+      "original": "9.JPG",
+      "asset": "/rooms/ekonomy/img_0009.webp",
+      "description": "Okno s květinami nad postelí",
+      "source_sha256": "465051b0af31a64759a243e4f06428587da1d6dc024ce1fc8465e388b5f42e0b",
+      "review_number": 30,
+      "number": 30
+    },
+    {
+      "id": "ECONOMY 10",
+      "original": "10.JPG",
+      "asset": "/rooms/ekonomy/img_0010.webp",
+      "description": "Posezení a pracovní kout v zeleném pokoji",
+      "source_sha256": "df7fbc101f07e29a3ed51b04c3347141d975b934c296af47a3ddac1ba4a94ae2",
+      "review_number": 31,
+      "number": 31
+    },
+    {
+      "id": "ECONOMY 11",
+      "original": "11.JPG",
+      "asset": "/rooms/ekonomy/img_0011.webp",
+      "description": "Postel a vstup do koupelny",
+      "source_sha256": "1cbd94608fe572723647461b91feb3448748eeab1652e1873cf30e34c112ada5",
+      "review_number": 32,
+      "number": 32
+    },
+    {
+      "id": "ECONOMY 12",
+      "original": "12.JPG",
+      "asset": "/rooms/ekonomy/img_0012.webp",
+      "description": "Postel a křeslo u okna s výhledem na řeku",
+      "source_sha256": "ed506f132830142228953dfd7207f71366247f962bf486aa3f9cc9eb2604f184",
+      "review_number": 33,
+      "number": 33
+    },
+    {
+      "id": "ECONOMY 13",
+      "original": "13.JPG",
+      "asset": "/rooms/ekonomy/img_0013.webp",
+      "description": "Dvě křesla a stolek vedle pracovního koutu",
+      "source_sha256": "92b2c9f598f1335b6a9b3743cc8a25033e6b172e50a98139efbc807f27e5b434",
+      "review_number": 34,
+      "number": 34
+    },
+    {
+      "id": "ECONOMY 14",
+      "original": "14.JPG",
+      "asset": "/rooms/ekonomy/img_0014.webp",
+      "description": "Dvoulůžko se šedými polštáři u okna",
+      "source_sha256": "0f5f2bbbfbdea1e1fa918725a39120d0475b2002ae687707e3778de0cc67f67a",
+      "review_number": 35,
+      "number": 35
+    },
+    {
+      "id": "ECONOMY 15",
+      "original": "15.JPG",
+      "asset": "/rooms/ekonomy/img_0015.webp",
+      "description": "Pracovní kout se zrcadlem a šatní skříní",
+      "source_sha256": "8b1e6092f9681b83894b987180e74150704d813101a9b238d8714d5c46e2654a",
+      "review_number": 36,
+      "number": 36
+    },
+    {
+      "id": "ECONOMY 16",
+      "original": "16.JPG",
+      "asset": "/rooms/ekonomy/img_0016.webp",
+      "description": "Vstup do koupelny s umyvadlem a sprchou",
+      "source_sha256": "e2b7900b44793b97d8f80510a5f69629a52140963b9e88059f62c8b67684f7ad",
+      "review_number": 37,
+      "number": 37
+    },
+    {
+      "id": "ECONOMY 17",
+      "original": "17.JPG",
+      "asset": "/rooms/ekonomy/img_0017.webp",
+      "description": "Umyvadlo a sprchový kout se zeleným obkladem",
+      "source_sha256": "f800ecb07c367e3b6746ca5868d263604488c53433eb2e8c8cd7e9b5c31ceb08",
+      "review_number": 38,
+      "number": 38
+    },
+    {
+      "id": "ECONOMY 18",
+      "original": "18.JPG",
+      "asset": "/rooms/ekonomy/img_0018.webp",
+      "description": "Dvoulůžko s fialovými polštáři a kulatým oknem",
+      "source_sha256": "e678a12ac8942d9290f4eda7348a1419d51e0f7d6d35a254f3b9520f15b6d74e",
+      "review_number": 39,
+      "number": 39
+    },
+    {
+      "id": "ECONOMY 19",
+      "original": "19.JPG",
+      "asset": "/rooms/ekonomy/img_0019.webp",
+      "description": "Šatní skříň a příprava kávy a čaje",
+      "source_sha256": "4ed747ff39df06d27500259cd8b332cb9a331cdce24819ac6335b93e465e6c82",
+      "review_number": 40,
+      "number": 40
+    },
+    {
+      "id": "SUPERIOR 01",
+      "original": "1.JPG",
+      "asset": "/rooms/superrior/img_0001.webp",
+      "description": "Dvoulůžko s dřevěným čelem a modrou skříní",
+      "source_sha256": "4ea31a8aec2ef7edbca6ec66e79f67ab5db5141bf6aa37289697dd803852e808",
+      "review_number": 41,
+      "number": 41
+    },
+    {
+      "id": "SUPERIOR 02",
+      "original": "2.JPG",
+      "asset": "/rooms/superrior/img_0002.webp",
+      "description": "Pracovní kout se zrcadlem a konvicí",
+      "source_sha256": "c5113f04aadc4fdad74d8599099d83b8fd86b596f046ed19a9a8e4f7a9bb6ccb",
+      "review_number": 42,
+      "number": 42
+    },
+    {
+      "id": "SUPERIOR 03",
+      "original": "3.JPG",
+      "asset": "/rooms/superrior/img_0003.webp",
+      "description": "Zrcadlo, pracovní stůl a šatní skříň",
+      "source_sha256": "7c119554790592cec327c77e89347b90bef4834f6c4bfb8dd173918ab69ea93a",
+      "review_number": 43,
+      "number": 43
+    },
+    {
+      "id": "SUPERIOR 04",
+      "original": "4.JPG",
+      "asset": "/rooms/superrior/img_0004.webp",
+      "description": "Sprchový kout a umyvadlo se zeleným obkladem",
+      "source_sha256": "d017fcb0112a0e945aaaf9ab839dff98216e0ae7bb50af0be421cc14a2f8b175",
+      "review_number": 44,
+      "number": 44
+    },
+    {
+      "id": "SUPERIOR 05",
+      "original": "5.JPG",
+      "asset": "/rooms/superrior/img_0005.webp",
+      "description": "Pohled na dvoulůžko a pracovní kout",
+      "source_sha256": "3fa84ed690bd857a5265f678801f71d0d9e85a769c47d4a0f92b27ff473ba7f9",
+      "review_number": 45,
+      "number": 45
+    },
+    {
+      "id": "SUPERIOR 06",
+      "original": "6.JPG",
+      "asset": "/rooms/superrior/img_0006.webp",
+      "description": "Postel u velkých oken s výhledem na řeku",
+      "source_sha256": "bccb7fc2af0f2fb1624416677852c7b466ccb77142d63d2d2f1c799d6a79986f",
+      "review_number": 46,
+      "number": 46
+    },
+    {
+      "id": "SUPERIOR 07",
+      "original": "7.JPG",
+      "asset": "/rooms/superrior/img_0007.webp",
+      "description": "Pohled z ložnice na umyvadlo a posezení",
+      "source_sha256": "243ab169f4e0acc786cc1d6ff5e1e91be2ebfcefcfd109732fe8217320ca4776",
+      "review_number": 47,
+      "number": 47
+    },
+    {
+      "id": "SUPERIOR 08",
+      "original": "8.JPG",
+      "asset": "/rooms/superrior/img_0008.webp",
+      "description": "Toaleta se zeleným obkladem",
+      "source_sha256": "f1e39072ba9b6a42f4eee5fbad7e30b95bccc20a3e8593c509dcba98704a583d",
+      "review_number": 48,
+      "number": 48
+    },
+    {
+      "id": "SUPERIOR 09",
+      "original": "9.JPG",
+      "asset": "/rooms/superrior/img_0009.webp",
+      "description": "Otevřená šatní skříň s ramínky a ručníky",
+      "source_sha256": "c0a3effe58096bfbe549900a19923482209a9dc95fc81b708de25c08df0be391",
+      "review_number": 49,
+      "number": 49
+    },
+    {
+      "id": "SUPERIOR 10",
+      "original": "10.JPG",
+      "asset": "/rooms/superrior/img_0010.webp",
+      "description": "Umyvadlo a kulaté zrcadlo u okna",
+      "source_sha256": "527d0caf1d024570e41f061a327ec992a2142217711ff3a34ffdb3b517aded8c",
+      "review_number": 50,
+      "number": 50
+    },
+    {
+      "id": "SUPERIOR 11",
+      "original": "11.JPG",
+      "asset": "/rooms/superrior/img_0011.webp",
+      "description": "Čtení u postele s výhledem na řeku",
+      "source_sha256": "204f0477ffb2886ba49f8c325632f0bc9153865b1ab6eec23f1eb36fd0b5ac9c",
+      "review_number": 51,
+      "number": 51
+    },
+    {
+      "id": "SUPERIOR 12",
+      "original": "12.JPG",
+      "asset": "/rooms/superrior/img_0012.webp",
+      "description": "Koupelna s vanou a červeným obkladem",
+      "source_sha256": "6af92e699fe946b43e4507fd2008a401b44ad016f2a4f8b3bcde083872516b2a",
+      "review_number": 52,
+      "number": 52
+    },
+    {
+      "id": "SUPERIOR 13",
+      "original": "13.JPG",
+      "asset": "/rooms/superrior/img_0013.webp",
+      "description": "Umyvadlo vedle kulatého okna",
+      "source_sha256": "a9d8137f5c8a4b56fe8446c0dc56f44d74833c22d90a5332f2a81497f20a48de",
+      "review_number": 53,
+      "number": 53
+    },
+    {
+      "id": "SUPERIOR 14",
+      "original": "14.JPG",
+      "asset": "/rooms/superrior/img_0014.webp",
+      "description": "Dřevěná skříň s ramínky a konvicí",
+      "source_sha256": "c801755be6f9ab7dc9f939d6b7b6b777dc07c93698e83a674482166bd4c19729",
+      "review_number": 54,
+      "number": 54
+    },
+    {
+      "id": "SUPERIOR 15",
+      "original": "15.JPG",
+      "asset": "/rooms/superrior/img_0015.webp",
+      "description": "Detail konvice a modrých šálků",
+      "source_sha256": "5ad23d69f06a81b34859fff2820bec0092fd37a11b8cda9253270dc119c48872",
+      "review_number": 55,
+      "number": 55
+    },
+    {
+      "id": "SUPERIOR 16",
+      "original": "16.JPG",
+      "asset": "/rooms/superrior/img_0016.webp",
+      "description": "Interiér pokoje s umyvadlem a posezením",
+      "source_sha256": "906879157af84fd981b4f6ba96817427052fd95030b6c2c4c4e8aae23540cc87",
+      "review_number": 56,
+      "number": 56
+    },
+    {
+      "id": "SUPERIOR 17",
+      "original": "17.JPG",
+      "asset": "/rooms/superrior/img_0017.webp",
+      "description": "Dvoulůžko s modrou skříní a pracovním stolem",
+      "source_sha256": "895a696c07798adc8c6f22a2b2acec867aeb4ef818deac40e78d37f8a18f5b77",
+      "review_number": 57,
+      "number": 57
+    },
+    {
+      "id": "DELUXE 01",
+      "original": "1.JPG",
+      "asset": "/rooms/deluxe/img_0001.webp",
+      "description": "Balkon s posezením a výhledem na řeku",
+      "source_sha256": "929e3cbd7050eca12f7c453ea20743854413b743be275f957358fdf7263a50db",
+      "review_number": 58,
+      "number": 58
+    },
+    {
+      "id": "DELUXE 02",
+      "original": "2.JPG",
+      "asset": "/rooms/deluxe/img_0002.webp",
+      "description": "Dvoulůžko s dřevěným lamelovým čelem",
+      "source_sha256": "ce04c04e3f019f25abb8acc5c0d815ba0a7ffc5e21bc637e474d31cde68722bc",
+      "review_number": 59,
+      "number": 59
+    },
+    {
+      "id": "DELUXE 03",
+      "original": "3.JPG",
+      "asset": "/rooms/deluxe/img_0003.webp",
+      "description": "Zelené křeslo u okna s výhledem na řeku",
+      "source_sha256": "39dae85cf3a56177333ceccf5af2ef35e253d607a88346aba83647f9448cc5e1",
+      "review_number": 60,
+      "number": 60
+    },
+    {
+      "id": "DELUXE 04",
+      "original": "4.JPG",
+      "asset": "/rooms/deluxe/img_0004.webp",
+      "description": "Kulaté zrcadlo s odrazem pohovky a pracovní kout",
+      "source_sha256": "557ea19ce76116a31ef5511770a154fa07a0d9d6b1e8129e2db4d6a17c84c90e",
+      "review_number": 61,
+      "number": 61
+    },
+    {
+      "id": "DELUXE 05",
+      "original": "5.JPG",
+      "asset": "/rooms/deluxe/img_0005.webp",
+      "description": "Umyvadlo a osvětlené zrcadlo se zeleným obkladem",
+      "source_sha256": "66c50c26145dbe6db2220becf331071e2b8c8c2c76a3869133fde7d7490aefea",
+      "review_number": 62,
+      "number": 62
+    },
+    {
+      "id": "DELUXE 06",
+      "original": "6.JPG",
+      "asset": "/rooms/deluxe/img_0006.webp",
+      "description": "Vana u oken s výhledem na řeku",
+      "source_sha256": "2c26fe455486d8947758199793e7231c102ccc2989354412831d764cf6e0a1cc",
+      "review_number": 63,
+      "number": 63
+    },
+    {
+      "id": "DELUXE 07",
+      "original": "7.JPG",
+      "asset": "/rooms/deluxe/img_0007.webp",
+      "description": "Umyvadlo a osvětlené zrcadlo s červeným obkladem",
+      "source_sha256": "099eb8ede961ad4ce40eb00ddd75b0eac570c7d283d904ed7b038659aa339b07",
+      "review_number": 64,
+      "number": 64
+    },
+    {
+      "id": "DELUXE 08",
+      "original": "8.JPG",
+      "asset": "/rooms/deluxe/img_0008.webp",
+      "description": "Křeslo v obývací části pokoje",
+      "source_sha256": "f745a937b6787fdabd708c98ee50246b80043d731647beae0abc36d7dd93ab93",
+      "review_number": 65,
+      "number": 65
+    },
+    {
+      "id": "DELUXE 09",
+      "original": "9.JPG",
+      "asset": "/rooms/deluxe/img_0009.webp",
+      "description": "Dveře na balkon a detail ložnice",
+      "source_sha256": "d53fb7b9ae3de622f36c94e70afea36d47934b2e59e1384250bcf8617ad1b1e7",
+      "review_number": 66,
+      "number": 66
+    },
+    {
+      "id": "DELUXE 10",
+      "original": "10.JPG",
+      "asset": "/rooms/deluxe/img_0010.webp",
+      "description": "Balkonové posezení nad klidnou hladinou řeky",
+      "source_sha256": "d428057318602cc67e4c4ea5ad210e4d84c0af87f3a9d34b60c81f8916613024",
+      "review_number": 67,
+      "number": 67
+    },
+    {
+      "id": "DELUXE 11",
+      "original": "11.JPG",
+      "asset": "/rooms/deluxe/img_0011.webp",
+      "description": "Pohled do ložnice a pracovního koutu",
+      "source_sha256": "af90b95e0e8febfddebb072976832297f00c3978e6c0c08edf6ff45ad42ea25e",
+      "review_number": 68,
+      "number": 68
+    },
+    {
+      "id": "DELUXE 12",
+      "original": "12.JPG",
+      "asset": "/rooms/deluxe/img_0012.webp",
+      "description": "Dvoulůžko s šedým přehozem a dřevěným čelem",
+      "source_sha256": "f2f292e94997ebc0708b6a3d8d1b87ab166666ac063ae1ea3af4d2bdd36dc3ac",
+      "review_number": 69,
+      "number": 69
+    },
+    {
+      "id": "DELUXE 13",
+      "original": "13.JPG",
+      "asset": "/rooms/deluxe/img_0013.webp",
+      "description": "Pracovní kout s křeslem a šatní skříní",
+      "source_sha256": "9efae0c6fcdeda40bcd6cf9331f3752c5194db7e07a8f69680c0f1476af94941",
+      "review_number": 70,
+      "number": 70
+    },
+    {
+      "id": "DELUXE 14",
+      "original": "14.JPG",
+      "asset": "/rooms/deluxe/img_0014.webp",
+      "description": "Pracovní stůl se zrcadlem, konvicí a lednicí",
+      "source_sha256": "ba97c1639bd8f4b3440d05f2a3e94af015f95c1ebee26784f3131f993bb44eb3",
+      "review_number": 71,
+      "number": 71
+    },
+    {
+      "id": "DELUXE 15",
+      "original": "15.JPG",
+      "asset": "/rooms/deluxe/img_0015.webp",
+      "description": "Detail konvice a šálků na čaj",
+      "source_sha256": "669e8e7da1c9f722aa3983a1d13f0371e1906ba8aa59933bd5f03632da2f4346",
+      "review_number": 72,
+      "number": 72
+    },
+    {
+      "id": "DELUXE 16",
+      "original": "16.JPG",
+      "asset": "/rooms/deluxe/img_0016.webp",
+      "description": "Šatní skříň s ramínky",
+      "source_sha256": "841df01cdb26bdeac920d8c6fe254021ef69e3116059fe348fb43ca9379139bc",
+      "review_number": 73,
+      "number": 73
+    },
+    {
+      "asset": "/weddings/wedding-01.jpg",
+      "number": 74,
+      "id": "SVATBY 01"
+    },
+    {
+      "asset": "/weddings/wedding-02.jpg",
+      "number": 75,
+      "id": "SVATBY 02"
+    },
+    {
+      "asset": "/weddings/wedding-03.jpg",
+      "number": 76,
+      "id": "SVATBY 03"
+    },
+    {
+      "asset": "/weddings/wedding-04.jpg",
+      "number": 77,
+      "id": "SVATBY 04"
+    },
+    {
+      "asset": "/weddings/wedding-05.jpg",
+      "number": 78,
+      "id": "SVATBY 05"
+    },
+    {
+      "asset": "/weddings/wedding-06.jpg",
+      "number": 79,
+      "id": "SVATBY 06"
+    }
+  ]
+}

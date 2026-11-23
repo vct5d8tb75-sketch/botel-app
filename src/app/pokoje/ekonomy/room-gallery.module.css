@@ -1,5 +1,5 @@
 .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
-.thumbnail { padding: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: #102d40; cursor: zoom-in; }
+.thumbnail { position: relative; padding: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: #102d40; cursor: zoom-in; }
 .thumbnail img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; transition: transform 180ms ease; }
 .thumbnail:hover img { transform: scale(1.035); }
 .thumbnail:focus-visible, .toolbar button:focus-visible { outline: 3px solid #e4c77b; outline-offset: 4px; }
