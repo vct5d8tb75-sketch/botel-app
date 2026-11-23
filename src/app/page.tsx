@@ -77,12 +77,13 @@ export default function HomePage() {
           </div>
           <div className="highlight-grid">
             {highlights.map((item) => (
-              <Link className="highlight-card" href={item.href} key={item.title}>
-                <span className="eyebrow">The Botel</span>
+              <article className="highlight-card" key={item.title}>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
-                <span className="highlight-link">Objevte více <ArrowRight size={16} aria-hidden="true" />{item.href === "/terasa" && <> <span className="eyebrow">THE BOTEL</span></>}</span>
-              </Link>
+                <Link className="highlight-link" href={item.href} aria-label={`Objevte více: ${item.title}`}>
+                  Objevte více <ArrowRight size={16} aria-hidden="true" /> <span className="eyebrow">THE BOTEL</span>
+                </Link>
+              </article>
             ))}
           </div>
         </div>
