@@ -25,6 +25,18 @@
   box-sizing: border-box;
 }
 
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+
+.hero-meta > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
 html {
   scroll-behavior: smooth;
 }

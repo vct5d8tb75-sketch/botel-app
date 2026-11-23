@@ -8,8 +8,8 @@ import { formatPhotoNumber } from "@/lib/photo-index";
 import { publicAsset } from "@/lib/site-assets";
 
 const highlights = [
-  { title: "Kajuty s výhledem", text: "Klidné pokoje přímo na vodě, pár minut od centra Prahy.", href: "/pokoje" },
-  { title: "Restaurace & bary", text: "Snídaně, večeře i drink na palubě s výhledem na řeku.", href: "/restaurace" },
+  { title: "Kajuty s výhledem", text: "Klidné pokoje přímo na vodě, pár minut od centra Prahy.", href: "/pokoje/#galerie-pokoju" },
+  { title: "Restaurace & bary", text: "Snídaně i drink na palubě s výhledem na řeku.", href: "/restaurace" },
   { title: "Terasa nad řekou", text: "Místo pro letní večery, setkání a malé soukromé eventy.", href: "/terasa" },
 ];
 
@@ -56,8 +56,8 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="hero-meta" aria-label="Hlavní výhody">
-            <span><Sparkles size={15} aria-hidden="true" /> Výhled na Vltavu</span>
-            <span>Centrum Prahy</span>
+            <span><Sparkles size={15} aria-hidden="true" /> Výhled na Vltavu</span>{" "}
+            <span>Centrum Prahy</span>{" "}
             <span>Atmosféra lodi</span>
           </div>
         </div>
@@ -81,7 +81,7 @@ export default function HomePage() {
                 <span className="eyebrow">The Botel</span>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
-                <span className="highlight-link">Objevte více <ArrowRight size={16} aria-hidden="true" /></span>
+                <span className="highlight-link">Objevte více <ArrowRight size={16} aria-hidden="true" />{item.href === "/terasa" && <> THE BOTEL</>}</span>
               </Link>
             ))}
           </div>
