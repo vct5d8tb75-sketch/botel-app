@@ -3,25 +3,22 @@ import { PublicPage } from "@/components/public-page";
 import { EconomyGallery } from "../ekonomy/room-gallery";
 
 const photos = [
-  [929, "Dvoulůžko s dřevěným čelem a šedým přehozem"],
-  [783, "Pohled na postel a okno"],
-  [781, "Posezení na balkoně nad řekou"],
-  [928, "Ložnice a průchod do pokoje"],
-  [925, "Dveře na balkon"],
-  [784, "Křeslo u okna s výhledem na vodu"],
-  [786, "Zrcadlo s pohledem na obývací část"],
-  [785, "Posezení v odrazu kulatého zrcadla"],
-  [924, "Křeslo v obývací části"],
-  [930, "Pracovní kout a šatní skříň"],
-  [933, "Pracovní kout se zrcadlem a lednicí"],
-  [934, "Konvice a šálky pro přípravu čaje"],
-  [935, "Úložné prostory s ramínky"],
-  [923, "Vana s hydromasážními tryskami"],
-  [789, "Vana se zeleným obkladem"],
-  [792, "Vana u oken s výhledem na řeku"],
-  [790, "Umyvadlo a osvětlené zrcadlo se zeleným obkladem"],
-  [922, "Umyvadlo a osvětlené zrcadlo s červeným obkladem"],
-  [920, "Detail vany a posezení u okna"],
+  [1, "Balkon s posezením a výhledem na řeku"],
+  [2, "Dvoulůžko s dřevěným lamelovým čelem"],
+  [3, "Zelené křeslo u okna s výhledem na řeku"],
+  [4, "Kulaté zrcadlo s odrazem pohovky a pracovní kout"],
+  [5, "Umyvadlo a osvětlené zrcadlo se zeleným obkladem"],
+  [6, "Vana u oken s výhledem na řeku"],
+  [7, "Umyvadlo a osvětlené zrcadlo s červeným obkladem"],
+  [8, "Křeslo v obývací části pokoje"],
+  [9, "Dveře na balkon a detail ložnice"],
+  [10, "Balkonové posezení nad klidnou hladinou řeky"],
+  [11, "Pohled do ložnice a pracovního koutu"],
+  [12, "Dvoulůžko s šedým přehozem a dřevěným čelem"],
+  [13, "Pracovní kout s křeslem a šatní skříní"],
+  [14, "Pracovní stůl se zrcadlem, konvicí a lednicí"],
+  [15, "Detail konvice a šálků na čaj"],
+  [16, "Šatní skříň s ramínky"],
 ] as const;
 
 export default function DeluxePage() {
@@ -29,7 +26,7 @@ export default function DeluxePage() {
     <PublicPage eyebrow="Pokoje · DELUXE" title="DELUXE" description="Prohlédněte si fotografie pokojů, interiérů a koupelen této kategorie.">
       <section className="page-section">
         <Link className="button" href="/pokoje/">← Všechny kategorie pokojů</Link>
-        <p style={{ margin: "24px 0" }}>19 fotografií · Kliknutím fotografii zvětšíte. Podrobnosti o ubytování brzy doplníme.</p>
+        <p style={{ margin: "24px 0" }}>16 fotografií · Kliknutím fotografii zvětšíte. Podrobnosti o ubytování brzy doplníme.</p>
         <EconomyGallery photos={photos} category="DELUXE" directory="deluxe" thumbnails={false} />
       </section>
     </PublicPage>

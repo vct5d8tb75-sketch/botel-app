@@ -1,0 +1,119 @@
+{
+  "category": "DELUXE",
+  "received": "2026-11-23",
+  "cover": "DELUXE 12",
+  "photos": [
+    {
+      "id": "DELUXE 01",
+      "original": "1.JPG",
+      "asset": "img_0001.webp",
+      "description": "Balkon s posezením a výhledem na řeku",
+      "source_sha256": "929e3cbd7050eca12f7c453ea20743854413b743be275f957358fdf7263a50db"
+    },
+    {
+      "id": "DELUXE 02",
+      "original": "2.JPG",
+      "asset": "img_0002.webp",
+      "description": "Dvoulůžko s dřevěným lamelovým čelem",
+      "source_sha256": "ce04c04e3f019f25abb8acc5c0d815ba0a7ffc5e21bc637e474d31cde68722bc"
+    },
+    {
+      "id": "DELUXE 03",
+      "original": "3.JPG",
+      "asset": "img_0003.webp",
+      "description": "Zelené křeslo u okna s výhledem na řeku",
+      "source_sha256": "39dae85cf3a56177333ceccf5af2ef35e253d607a88346aba83647f9448cc5e1"
+    },
+    {
+      "id": "DELUXE 04",
+      "original": "4.JPG",
+      "asset": "img_0004.webp",
+      "description": "Kulaté zrcadlo s odrazem pohovky a pracovní kout",
+      "source_sha256": "557ea19ce76116a31ef5511770a154fa07a0d9d6b1e8129e2db4d6a17c84c90e"
+    },
+    {
+      "id": "DELUXE 05",
+      "original": "5.JPG",
+      "asset": "img_0005.webp",
+      "description": "Umyvadlo a osvětlené zrcadlo se zeleným obkladem",
+      "source_sha256": "66c50c26145dbe6db2220becf331071e2b8c8c2c76a3869133fde7d7490aefea"
+    },
+    {
+      "id": "DELUXE 06",
+      "original": "6.JPG",
+      "asset": "img_0006.webp",
+      "description": "Vana u oken s výhledem na řeku",
+      "source_sha256": "2c26fe455486d8947758199793e7231c102ccc2989354412831d764cf6e0a1cc"
+    },
+    {
+      "id": "DELUXE 07",
+      "original": "7.JPG",
+      "asset": "img_0007.webp",
+      "description": "Umyvadlo a osvětlené zrcadlo s červeným obkladem",
+      "source_sha256": "099eb8ede961ad4ce40eb00ddd75b0eac570c7d283d904ed7b038659aa339b07"
+    },
+    {
+      "id": "DELUXE 08",
+      "original": "8.JPG",
+      "asset": "img_0008.webp",
+      "description": "Křeslo v obývací části pokoje",
+      "source_sha256": "f745a937b6787fdabd708c98ee50246b80043d731647beae0abc36d7dd93ab93"
+    },
+    {
+      "id": "DELUXE 09",
+      "original": "9.JPG",
+      "asset": "img_0009.webp",
+      "description": "Dveře na balkon a detail ložnice",
+      "source_sha256": "d53fb7b9ae3de622f36c94e70afea36d47934b2e59e1384250bcf8617ad1b1e7"
+    },
+    {
+      "id": "DELUXE 10",
+      "original": "10.JPG",
+      "asset": "img_0010.webp",
+      "description": "Balkonové posezení nad klidnou hladinou řeky",
+      "source_sha256": "d428057318602cc67e4c4ea5ad210e4d84c0af87f3a9d34b60c81f8916613024"
+    },
+    {
+      "id": "DELUXE 11",
+      "original": "11.JPG",
+      "asset": "img_0011.webp",
+      "description": "Pohled do ložnice a pracovního koutu",
+      "source_sha256": "af90b95e0e8febfddebb072976832297f00c3978e6c0c08edf6ff45ad42ea25e"
+    },
+    {
+      "id": "DELUXE 12",
+      "original": "12.JPG",
+      "asset": "img_0012.webp",
+      "description": "Dvoulůžko s šedým přehozem a dřevěným čelem",
+      "source_sha256": "f2f292e94997ebc0708b6a3d8d1b87ab166666ac063ae1ea3af4d2bdd36dc3ac"
+    },
+    {
+      "id": "DELUXE 13",
+      "original": "13.JPG",
+      "asset": "img_0013.webp",
+      "description": "Pracovní kout s křeslem a šatní skříní",
+      "source_sha256": "9efae0c6fcdeda40bcd6cf9331f3752c5194db7e07a8f69680c0f1476af94941"
+    },
+    {
+      "id": "DELUXE 14",
+      "original": "14.JPG",
+      "asset": "img_0014.webp",
+      "description": "Pracovní stůl se zrcadlem, konvicí a lednicí",
+      "source_sha256": "ba97c1639bd8f4b3440d05f2a3e94af015f95c1ebee26784f3131f993bb44eb3"
+    },
+    {
+      "id": "DELUXE 15",
+      "original": "15.JPG",
+      "asset": "img_0015.webp",
+      "description": "Detail konvice a šálků na čaj",
+      "source_sha256": "669e8e7da1c9f722aa3983a1d13f0371e1906ba8aa59933bd5f03632da2f4346"
+    },
+    {
+      "id": "DELUXE 16",
+      "original": "16.JPG",
+      "asset": "img_0016.webp",
+      "description": "Šatní skříň s ramínky",
+      "source_sha256": "841df01cdb26bdeac920d8c6fe254021ef69e3116059fe348fb43ca9379139bc"
+    }
+  ]
+}
