@@ -65,23 +65,23 @@ export default function HomePage() {
 
       <section className="section intro-section">
         <div className="section-inner">
-          <div className="section-head">
-            <div>
-              <span className="eyebrow">The Botel · Praha</span>
-              <h2>Hotel, který stojí za to zažít</h2>
+          <div className="section-head intro-heading">
+            <span className="eyebrow">The Botel · Praha</span>
+            <div className="intro-lead">
+              <h2>Hotel, který stojí za to zažít</h2>{" "}
+              <p>
+                Nejen přespat. Ráno se probudit nad řekou, dát si snídani na palubě a večer sledovat,
+                jak se Praha odráží ve Vltavě.
+              </p>
             </div>
-            <p>
-              Nejen přespat. Ráno se probudit nad řekou, dát si snídani na palubě a večer sledovat,
-              jak se Praha odráží ve Vltavě.
-            </p>
           </div>
           <div className="highlight-grid">
             {highlights.map((item) => (
               <article className="highlight-card" key={item.title}>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
-                <Link className="highlight-link" href={item.href} aria-label={`Objevte více: ${item.title}`}>
-                  Objevte více <ArrowRight size={16} aria-hidden="true" /> <span className="eyebrow">THE BOTEL</span>
+                <Link className="highlight-link" href={item.href} aria-label={item.title === "Kajuty s výhledem" ? "Galerie pokojů" : `Objevte více: ${item.title}`}>
+                  Objevte více <ArrowRight size={16} aria-hidden="true" /> <span className="eyebrow">{item.title === "Kajuty s výhledem" ? "Galerie pokojů" : "THE BOTEL"}</span>
                 </Link>
               </article>
             ))}

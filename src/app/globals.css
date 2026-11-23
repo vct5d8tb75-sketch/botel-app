@@ -313,6 +313,29 @@ select {
   line-height: 1.6;
 }
 
+.intro-heading {
+  display: block;
+}
+
+.intro-lead {
+  margin-top: 0.35rem;
+  line-height: 1.5;
+}
+
+.intro-lead h2 {
+  display: inline;
+  margin-right: 0.3em;
+}
+
+.intro-lead p {
+  display: inline;
+  max-width: none;
+  color: var(--heading-gold);
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: clamp(22px, 2.5vw, 28px);
+  line-height: 1.5;
+}
+
 .dark .section-head p {
   color: var(--muted);
 }
