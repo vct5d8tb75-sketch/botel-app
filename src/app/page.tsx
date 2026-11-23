@@ -81,7 +81,7 @@ export default function HomePage() {
                 <span className="eyebrow">The Botel</span>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
-                <span className="highlight-link">Objevte více <ArrowRight size={16} aria-hidden="true" />{item.href === "/terasa" && <> THE BOTEL</>}</span>
+                <span className="highlight-link">Objevte více <ArrowRight size={16} aria-hidden="true" />{item.href === "/terasa" && <> <span className="eyebrow">THE BOTEL</span></>}</span>
               </Link>
             ))}
           </div>
