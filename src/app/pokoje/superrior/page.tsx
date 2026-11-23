@@ -3,26 +3,23 @@ import { PublicPage } from "@/components/public-page";
 import { EconomyGallery } from "../ekonomy/room-gallery";
 
 const photos = [
-  [939, "Dvoulůžkový pokoj s modrou skříní"],
-  [471, "Postel u velkých oken s výhledem na vodu"],
-  [462, "Dvoulůžko a pracovní kout"],
-  [468, "Celkový pohled na pokoj"],
-  [938, "Interiér pokoje s koupelnovým koutem"],
-  [463, "Pracovní kout se zrcadlem"],
-  [905, "Koupelnový kout s vanou"],
-  [906, "Detail vany"],
-  [907, "Umyvadlo a kulaté okno"],
-  [936, "Umyvadlo s kulatým zrcadlem"],
-  [937, "Příprava kávy a čaje"],
-  [910, "Úložné prostory a zrcadlo"],
-  [480, "Detail umyvadla a zrcadla"],
-  [466, "Sprcha a umyvadlo"],
-  [483, "Čtenářský kout u okna s výhledem na řeku"],
-  [474, "Pohled na koupelnový kout"],
-  [478, "Umyvadlo u okna"],
-  [475, "Toaleta"],
-  [476, "Šatní skříň a pracovní kout"],
-  [477, "Sprchový kout"],
+  [1, "Dvoulůžko s dřevěným čelem a modrou skříní"],
+  [2, "Pracovní kout se zrcadlem a konvicí"],
+  [3, "Zrcadlo, pracovní stůl a šatní skříň"],
+  [4, "Sprchový kout a umyvadlo se zeleným obkladem"],
+  [5, "Pohled na dvoulůžko a pracovní kout"],
+  [6, "Postel u velkých oken s výhledem na řeku"],
+  [7, "Pohled z ložnice na umyvadlo a posezení"],
+  [8, "Toaleta se zeleným obkladem"],
+  [9, "Otevřená šatní skříň s ramínky a ručníky"],
+  [10, "Umyvadlo a kulaté zrcadlo u okna"],
+  [11, "Čtení u postele s výhledem na řeku"],
+  [12, "Koupelna s vanou a červeným obkladem"],
+  [13, "Umyvadlo vedle kulatého okna"],
+  [14, "Dřevěná skříň s ramínky a konvicí"],
+  [15, "Detail konvice a modrých šálků"],
+  [16, "Interiér pokoje s umyvadlem a posezením"],
+  [17, "Dvoulůžko s modrou skříní a pracovním stolem"],
 ] as const;
 
 export default function SuperriorPage() {
@@ -30,7 +27,7 @@ export default function SuperriorPage() {
     <PublicPage eyebrow="Pokoje · SUPERRIOR" title="SUPERRIOR" description="Prohlédněte si fotografie pokojů, interiérů a koupelen této kategorie.">
       <section className="page-section">
         <Link className="button" href="/pokoje/">← Všechny kategorie pokojů</Link>
-        <p style={{ margin: "24px 0" }}>20 fotografií · Kliknutím fotografii zvětšíte. Podrobnosti o ubytování brzy doplníme.</p>
+        <p style={{ margin: "24px 0" }}>17 fotografií · Kliknutím fotografii zvětšíte. Podrobnosti o ubytování brzy doplníme.</p>
         <EconomyGallery photos={photos} category="SUPERRIOR" directory="superrior" thumbnails={false} />
       </section>
     </PublicPage>

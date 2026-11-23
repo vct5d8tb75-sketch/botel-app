@@ -3,7 +3,7 @@ import { publicAsset } from "@/lib/site-assets";
 
 const categories = [
   { name: "EKONOMY", gallery: "/pokoje/ekonomy/", image: "/rooms/ekonomy/thumbs/img_0762.webp" },
-  { name: "SUPERRIOR", gallery: "/pokoje/superrior/", image: "/rooms/superrior/img_0471.webp" },
+  { name: "SUPERRIOR", gallery: "/pokoje/superrior/", image: "/rooms/superrior/img_0006.webp" },
   { name: "DELUXE", gallery: "/pokoje/deluxe/", image: "/rooms/deluxe/img_0012.webp" },
 ] as const;
 
