@@ -35,12 +35,14 @@ const economyPhotos = [
 
 const filename = (number: number) => `img_${String(number).padStart(4, "0")}.webp`;
 
-export function EconomyGallery({ photos = economyPhotos, category = "EKONOMY", directory = "ekonomy", thumbnails = true }: {
+export function EconomyGallery({ photos = economyPhotos, category = "EKONOMY", directory = "ekonomy", thumbnails = true, assetDirectory }: {
   photos?: readonly (readonly [number, string])[];
   category?: string;
   directory?: string;
   thumbnails?: boolean;
+  assetDirectory?: `/${string}`;
 }) {
+  const photoDirectory: `/${string}` = assetDirectory ?? `/rooms/${directory}`;
   const dialog = useRef<HTMLDialogElement>(null);
   const [index, setIndex] = useState(0);
   const [opened, setOpened] = useState(false);
@@ -50,26 +52,26 @@ export function EconomyGallery({ photos = economyPhotos, category = "EKONOMY", d
     <>
       <div className={styles.grid}>
         {photos.map(([number, alt], position) => (
-          <button className={styles.thumbnail} key={number} type="button" aria-label={`Zvětšit fotografii ${position + 1}: ${alt}`} onClick={() => {
+          <button className={styles.thumbnail} key={number} type="button" aria-label={`Zvětšit fotografii ${formatPhotoNumber(`${photoDirectory}/${filename(number)}`)}: ${alt}`} onClick={() => {
             setIndex(position);
             setOpened(true);
             dialog.current?.showModal();
           }}>
-            <img src={publicAsset(`/rooms/${directory}/${thumbnails ? "thumbs/" : ""}${filename(number)}`)} alt={alt} loading="lazy" width={640} height={427} />
-            <span className="photo-number">{formatPhotoNumber(`/rooms/${directory}/${filename(number)}`)}</span>
+            <img src={publicAsset(`${photoDirectory}/${thumbnails ? "thumbs/" : ""}${filename(number)}`)} alt={alt} loading="lazy" width={640} height={427} />
+            <span className="photo-number">{formatPhotoNumber(`${photoDirectory}/${filename(number)}`)}</span>
           </button>
         ))}
       </div>
-      <dialog ref={dialog} className={styles.dialog} aria-label={`Fotogalerie pokojů ${category}`} onClose={() => setOpened(false)} onClick={(event) => { if (event.target === event.currentTarget) dialog.current?.close(); }} onKeyDown={(event) => {
+      <dialog ref={dialog} className={styles.dialog} aria-label={`Fotogalerie ${category}`} onClose={() => setOpened(false)} onClick={(event) => { if (event.target === event.currentTarget) dialog.current?.close(); }} onKeyDown={(event) => {
         if (event.key === "ArrowRight") { event.preventDefault(); move(1); }
         if (event.key === "ArrowLeft") { event.preventDefault(); move(-1); }
       }}>
         <div className={styles.viewer}>
           <div className={styles.toolbar}>
-            <span aria-live="polite">{formatPhotoNumber(`/rooms/${directory}/${filename(photos[index][0])}`)} · {index + 1} / {photos.length}</span>
+            <span aria-live="polite">{formatPhotoNumber(`${photoDirectory}/${filename(photos[index][0])}`)} · {index + 1} / {photos.length}</span>
             <button type="button" onClick={() => dialog.current?.close()} autoFocus aria-label="Zavřít galerii">Zavřít ×</button>
           </div>
-          {opened && <img className={styles.fullImage} src={publicAsset(`/rooms/${directory}/${filename(photos[index][0])}`)} alt={photos[index][1]} />}
+          {opened && <img className={styles.fullImage} src={publicAsset(`${photoDirectory}/${filename(photos[index][0])}`)} alt={photos[index][1]} />}
           <div className={styles.toolbar}>
             <button type="button" onClick={() => move(-1)} aria-label="Předchozí fotografie">← Předchozí</button>
             <button type="button" onClick={() => move(1)} aria-label="Další fotografie">Další →</button>

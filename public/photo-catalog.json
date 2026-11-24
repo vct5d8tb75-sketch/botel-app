@@ -584,6 +584,69 @@
       "asset": "/weddings/wedding-06.jpg",
       "number": 79,
       "id": "SVATBY 06"
+    },
+    {
+      "asset": "/restaurants/the-river/img_0554.webp",
+      "number": 80,
+      "original": "IMG_0554.JPG",
+      "description": "Hlavní restaurace The River s kulatými okny",
+      "source_sha256": "de2f48b2c94ce231444536054caaba5e94326c40b8fbb16cf4c4d12a751d94e4"
+    },
+    {
+      "asset": "/restaurants/the-river/img_0555.webp",
+      "number": 81,
+      "original": "IMG_0555.JPG",
+      "description": "Stůl s květinami u kulatého okna",
+      "source_sha256": "f885f6d8eb990173c3d1e22bc5ad5acd0ed1b65f7c934680eea6ab9ceaf5e41e"
+    },
+    {
+      "asset": "/restaurants/the-river/img_0557.webp",
+      "number": 82,
+      "original": "IMG_0557.JPG",
+      "description": "Snídaňový bufet s ovocem a studeným občerstvením",
+      "source_sha256": "eb58ac67cfd9472729c183f0c2c019b92a5c8dabd2f8309f61ff2331095e5044"
+    },
+    {
+      "asset": "/restaurants/the-river/img_0560.webp",
+      "number": 83,
+      "original": "IMG_0560.JPG",
+      "description": "Květinová dekorace na stole v restauraci",
+      "source_sha256": "5a57336c404c61b1ef5a1a3b550cc2bc16c78c80d64fd494117a6b16111d81de"
+    },
+    {
+      "asset": "/restaurants/the-river/img_0556.webp",
+      "number": 84,
+      "original": "IMG_0556.JPG",
+      "description": "Posezení v restauraci a kávový bar",
+      "source_sha256": "a97a910d0738bed22b6420eba99b793de2cd9f1c968c8f8a04898c94afcaa9a2"
+    },
+    {
+      "asset": "/restaurants/the-river/img_0904.webp",
+      "number": 85,
+      "original": "IMG_0904.JPG",
+      "description": "Sladké pečivo na snídaňovém bufetu",
+      "source_sha256": "3fbff8cf9a79bf36d57fa4e924ae4f0dc81b5b37b744124c8895839aa50b0ce7"
+    },
+    {
+      "asset": "/restaurants/the-river/img_0563.webp",
+      "number": 86,
+      "original": "IMG_0563.JPG",
+      "description": "Teplá nabídka snídaňového bufetu",
+      "source_sha256": "4e4c51c0f28b3f65e18673cba4eecbb23989cee24f21835d0ea9084e40f6613e"
+    },
+    {
+      "asset": "/restaurants/the-river/img_0580.webp",
+      "number": 87,
+      "original": "IMG_0580.JPG",
+      "description": "Čajový koutek s konvičkami",
+      "source_sha256": "da704a5a6c1775fd6023e0cd9d2ef7f84eee00ceb64d606f69b597f2d0eb2563"
+    },
+    {
+      "asset": "/restaurants/the-river/img_0575.webp",
+      "number": 88,
+      "original": "IMG_0575.JPG",
+      "description": "Detail sladkého pečiva a svíčky",
+      "source_sha256": "7f84a59b9d27d69780ff8a97a9006118abf158c6f69f76b1961d9cf2713205f5"
     }
   ]
 }

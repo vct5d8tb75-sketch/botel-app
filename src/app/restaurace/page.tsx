@@ -1,4 +1,17 @@
 import { PublicPage } from "@/components/public-page";
+import { EconomyGallery } from "../pokoje/ekonomy/room-gallery";
+
+const riverPhotos = [
+  [554, "Hlavní restaurace The River s kulatými okny"],
+  [555, "Stůl s květinami u kulatého okna"],
+  [557, "Snídaňový bufet s ovocem a studeným občerstvením"],
+  [560, "Květinová dekorace na stole v restauraci"],
+  [556, "Posezení v restauraci a kávový bar"],
+  [904, "Sladké pečivo na snídaňovém bufetu"],
+  [563, "Teplá nabídka snídaňového bufetu"],
+  [580, "Čajový koutek s konvičkami"],
+  [575, "Detail sladkého pečiva a svíčky"],
+] as const;
 
 const venues = [
   {
@@ -31,6 +44,16 @@ export default function RestaurantPage() {
             </article>
           ))}
         </div>
+      </section>
+      <section id="the-river" className="page-section" aria-label="Fotogalerie The River">
+        <div className="section-head">
+          <div>
+            <span className="eyebrow">Hlavní restaurace</span>
+            <h2>The River</h2>
+          </div>
+          <p>Prohlédněte si restauraci a snídaňový bufet. Kliknutím fotografii zvětšíte.</p>
+        </div>
+        <EconomyGallery photos={riverPhotos} category="The River" assetDirectory="/restaurants/the-river" thumbnails={false} />
       </section>
     </PublicPage>
   );

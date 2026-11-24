@@ -79,6 +79,15 @@ const photoIndex = new Map<string, number>([
   ["/weddings/wedding-04.jpg", 77],
   ["/weddings/wedding-05.jpg", 78],
   ["/weddings/wedding-06.jpg", 79],
+  ["/restaurants/the-river/img_0554.webp", 80],
+  ["/restaurants/the-river/img_0555.webp", 81],
+  ["/restaurants/the-river/img_0557.webp", 82],
+  ["/restaurants/the-river/img_0560.webp", 83],
+  ["/restaurants/the-river/img_0556.webp", 84],
+  ["/restaurants/the-river/img_0904.webp", 85],
+  ["/restaurants/the-river/img_0563.webp", 86],
+  ["/restaurants/the-river/img_0580.webp", 87],
+  ["/restaurants/the-river/img_0575.webp", 88],
 ]);
 
 const canonicalPhoto = (src: string) => src.split("?")[0].replace("/thumbs/", "/");
