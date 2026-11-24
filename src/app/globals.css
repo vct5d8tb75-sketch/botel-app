@@ -434,32 +434,40 @@ select {
   line-height: 1.7;
 }
 
-.crew-card {
+.crew-team-grid {
   display: grid;
-  gap: 8px;
-  max-width: 520px;
-  padding: 22px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(6, 27, 45, 0.88);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 26px;
+  margin: 28px 0;
 }
 
-.crew-card strong {
-  color: var(--text);
-  font-size: 20px;
+.crew-team-role {
+  border-top: 1px solid var(--line);
+  padding-top: 15px;
 }
 
-.crew-card span {
+.crew-team-role h3 {
+  margin: 0 0 8px;
   color: var(--gold);
-  font-size: 13px;
-  font-weight: 800;
-  text-transform: uppercase;
+  font-size: 19px;
 }
 
-.crew-card p {
+.crew-team-role p {
   margin: 0;
   color: var(--muted);
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.crew-copy > .crew-team-message {
+  margin-bottom: 0;
+  color: var(--gold);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .crew-team-grid { grid-template-columns: 1fr; gap: 18px; }
 }
 
 .brand-section {

@@ -3,7 +3,6 @@ import type { CSSProperties } from "react";
 import { ArrowRight, CalendarCheck, HeartHandshake, Sparkles } from "lucide-react";
 import { PublicHeader } from "@/components/public-header";
 import { RoomCategoryCards } from "@/components/room-category-cards";
-import { crewMembers } from "@/lib/crew-assets";
 import { formatPhotoNumber } from "@/lib/photo-index";
 import { publicAsset } from "@/lib/site-assets";
 
@@ -25,7 +24,7 @@ const departmentLogos = [
 export default function HomePage() {
   const heroImage = "/homepage-hero-river.jpg?v=2";
   const storyImage = "/homepage-vltava-perspective.webp";
-  const crewImage = crewMembers[0].src as `/${string}`;
+  const crewImage = "/restaurants/the-river/img_0560.webp";
   const heroStyle = {
     "--hero-image": `url("${publicAsset(heroImage)}")`,
   } as CSSProperties;
@@ -110,20 +109,23 @@ export default function HomePage() {
       <section className="section crew-section">
         <div className="section-inner crew-story">
           <div className="crew-portrait-wrap">
-            <img className="crew-portrait" src={publicAsset(crewImage)} alt={crewMembers[0].name} />
+            <img className="crew-portrait" src={publicAsset(crewImage)} alt="Květiny na připraveném stole ve snídaňovém salónku The Botel" />
             <span className="photo-number" aria-hidden="true">{formatPhotoNumber(crewImage)}</span>
           </div>
           <div className="crew-copy">
             <span className="eyebrow">Posádka The Botel</span>
-            <h2>Osobní přístup, který je cítit</h2>
+            <h2>Jedna posádka.<br />Péče v každém detailu.</h2>
             <p>
-              Chceme, aby se u nás host cítil jako na své lodi. Přirozeně, osobně a bez zbytečných formalit.
+              Za příjemným pobytem stojí celá naše posádka. Od prvního přivítání až po poslední
+              den se společně staráme o to, abyste se u nás cítili dobře.
             </p>
-            <div className="crew-card">
-              <strong>{crewMembers[0].name}</strong>
-              <span>{crewMembers[0].role}</span>
-              <p>{crewMembers[0].note}</p>
+            <div className="crew-team-grid">
+              <div className="crew-team-role"><h3>Úklid</h3><p>Čistý pokoj a pečlivě připravené detaily pro váš odpočinek.</p></div>
+              <div className="crew-team-role"><h3>Údržba</h3><p>Vše v pořádku, aby váš pobyt na vodě plynul bez starostí.</p></div>
+              <div className="crew-team-role"><h3>Kuchyně</h3><p>Snídaně připravená s péčí pro příjemný začátek dne.</p></div>
+              <div className="crew-team-role"><h3>Recepce</h3><p>Vřelé přivítání a pomoc, kdykoli ji během pobytu potřebujete.</p></div>
             </div>
+            <p className="crew-team-message">Každý máme svou roli. O vás pečujeme společně.</p>
           </div>
         </div>
       </section>
