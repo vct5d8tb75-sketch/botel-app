@@ -1,0 +1,7 @@
+.filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+.filters button { cursor: pointer; }
+.filters button[aria-pressed="true"] { color: var(--navy); background: var(--heading-gold); border-color: var(--heading-gold); }
+.filters button:focus-visible { outline: 3px solid var(--heading-gold); outline-offset: 4px; }
+.count { margin: 0 0 32px; color: var(--text-muted); }
+.category { margin-bottom: 56px; }
+.category:last-of-type { margin-bottom: 0; }

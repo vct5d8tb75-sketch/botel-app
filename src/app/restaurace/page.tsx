@@ -2,7 +2,7 @@ import { PublicPage } from "@/components/public-page";
 import { EconomyGallery } from "../pokoje/ekonomy/room-gallery";
 
 const riverPhotos = [
-  [554, "Hlavní restaurace The River s kulatými okny"],
+  [554, "Snídaňový salónek s kulatými okny"],
   [555, "Stůl s květinami u kulatého okna"],
   [557, "Snídaňový bufet s ovocem a studeným občerstvením"],
   [560, "Květinová dekorace na stole v restauraci"],
@@ -15,8 +15,8 @@ const riverPhotos = [
 
 const venues = [
   {
-    name: "The River",
-    text: "Hlavni restaurace pro snidane hostu a denni provoz u vody.",
+    name: "Snídaňový salónek",
+    text: "Prostor pro snídaně hostů s výhledem na vodu.",
   },
   {
     name: "The Deck",
@@ -32,8 +32,8 @@ export default function RestaurantPage() {
   return (
     <PublicPage
       eyebrow="Restaurace a bar"
-      title="The River, The Deck a The AFT"
-      description="Jidelni a barova cast The Botel: snidane v The River, hlavni bar The Deck a zadni paluba The AFT."
+      title="Snídaňový salónek, The Deck a The AFT"
+      description="Snídaně ve Snídaňovém salónku, hlavní bar The Deck a zadní paluba The AFT."
     >
       <section className="page-section">
         <div className="card-grid">
@@ -45,15 +45,15 @@ export default function RestaurantPage() {
           ))}
         </div>
       </section>
-      <section id="the-river" className="page-section" aria-label="Fotogalerie The River">
+      <section id="the-river" className="page-section" aria-label="Fotogalerie Snídaňový salónek">
         <div className="section-head">
           <div>
-            <span className="eyebrow">Hlavní restaurace</span>
-            <h2>The River</h2>
+            <span className="eyebrow">Snídaně na vodě</span>
+            <h2>Snídaňový salónek</h2>
           </div>
           <p>Prohlédněte si restauraci a snídaňový bufet. Kliknutím fotografii zvětšíte.</p>
         </div>
-        <EconomyGallery photos={riverPhotos} category="The River" assetDirectory="/restaurants/the-river" thumbnails={false} />
+        <EconomyGallery photos={riverPhotos} category="Snídaňový salónek" assetDirectory="/restaurants/the-river" thumbnails={false} />
       </section>
     </PublicPage>
   );

@@ -34,7 +34,7 @@ const capacities = [
 const weddingFlow = [
   "Priprava, dekorace a koordinace hostu eventovym tymem",
   "Obrad na slunecni palube The Sun Deck s vyhledem na reku",
-  "Hostina v The River, The Salon nebo ve vnitrnich prostorach pri spatnem pocasi",
+  "Hostina ve Snídaňovém salónku, The Salon nebo ve vnitrnich prostorach pri spatnem pocasi",
   "Vecerni bar v The Deck, The Horizon nebo The AFT",
   "Ubytovani hostu primo v pokojich a kajutach The Botel",
 ];

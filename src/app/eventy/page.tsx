@@ -10,7 +10,7 @@ const eventSpaces = [
     text: "Slunecni paluba pro welcome drink, obrad, networking nebo vecerni posezeni nad rekou.",
   },
   {
-    name: "The River a The Deck",
+    name: "Snídaňový salónek a The Deck",
     text: "Restaurace, hlavni bar a palubni servis pro hostiny, firemni catering a privatni bar.",
   },
 ];

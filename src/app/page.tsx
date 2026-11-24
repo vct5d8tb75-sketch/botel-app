@@ -14,7 +14,7 @@ const highlights = [
 ];
 
 const departmentLogos = [
-  { name: "River", label: "Snídaně & restaurace", href: "/restaurace", hasWaves: true },
+  { name: "Snídaňový salónek", label: "Snídaně pro hosty", href: "/restaurace", hasWaves: true },
   { name: "AFT", label: "Bar na zadní palubě", href: "/restaurace", hasWaves: true },
   { name: "Salon", label: "Hlavní společenská místnost", href: "/eventy" },
   { name: "Sun Deck", label: "Sluneční terasa", href: "/terasa" },
@@ -170,8 +170,8 @@ export default function HomePage() {
           <div className="department-logo-grid">
             {departmentLogos.map((item) => (
               <Link className="department-logo-card" href={item.href} key={item.name}>
-                <span className="department-logo" aria-label={`The ${item.name} ${item.label}`}>
-                  <span className="the">The</span>
+                <span className="department-logo" aria-label={`${item.name === "Snídaňový salónek" ? "" : "The "}${item.name} ${item.label}`}>
+                  {item.name !== "Snídaňový salónek" && <span className="the">The</span>}
                   <span className="name">{item.name}</span>
                   <span className="sub">{item.label}</span>
                   {item.hasWaves ? <span className="wave-mark" aria-hidden="true" /> : null}
