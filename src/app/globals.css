@@ -446,6 +446,10 @@ select {
   padding-top: 15px;
 }
 
+.crew-team-role:last-child {
+  grid-column: 1 / -1;
+}
+
 .crew-team-role h3 {
   margin: 0 0 8px;
   color: var(--gold);
@@ -460,7 +464,7 @@ select {
 }
 
 .crew-copy > .crew-team-message {
-  margin-bottom: 0;
+  margin-bottom: 18px;
   color: var(--gold);
   font-size: 17px;
   font-weight: 600;

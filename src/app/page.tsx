@@ -115,17 +115,18 @@ export default function HomePage() {
           <div className="crew-copy">
             <span className="eyebrow">Posádka The Botel</span>
             <h2>Jedna posádka.<br />Péče v každém detailu.</h2>
+            <p className="crew-team-message">Každý máme svou roli. O vás pečujeme společně.</p>
             <p>
               Za příjemným pobytem stojí celá naše posádka. Od prvního přivítání až po poslední
               den se společně staráme o to, abyste se u nás cítili dobře.
             </p>
             <div className="crew-team-grid">
+              <div className="crew-team-role"><h3>Recepce</h3><p>Vřelé přivítání a pomoc, kdykoli ji během pobytu potřebujete.</p></div>
+              <div className="crew-team-role"><h3>Kuchyně</h3><p>Snídaně připravená s péčí pro příjemný začátek dne.</p></div>
               <div className="crew-team-role"><h3>Úklid</h3><p>Čistý pokoj a pečlivě připravené detaily pro váš odpočinek.</p></div>
               <div className="crew-team-role"><h3>Údržba</h3><p>Vše v pořádku, aby váš pobyt na vodě plynul bez starostí.</p></div>
-              <div className="crew-team-role"><h3>Kuchyně</h3><p>Snídaně připravená s péčí pro příjemný začátek dne.</p></div>
-              <div className="crew-team-role"><h3>Recepce</h3><p>Vřelé přivítání a pomoc, kdykoli ji během pobytu potřebujete.</p></div>
+              <div className="crew-team-role"><h3>Back Office</h3><p>Pečlivá organizace v zázemí, aby vše pro váš pobyt fungovalo společně.</p></div>
             </div>
-            <p className="crew-team-message">Každý máme svou roli. O vás pečujeme společně.</p>
           </div>
         </div>
       </section>
